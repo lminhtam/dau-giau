@@ -5,6 +5,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { firebaseConfig } from "./firebaseConfig";
 import firebase from "firebase";
+import "./fonts/BebasNeue-Regular.ttf";
 
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();

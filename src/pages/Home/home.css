@@ -1,0 +1,7 @@
+.background {
+  background-image: url(../../assets/images/bg.jpg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
