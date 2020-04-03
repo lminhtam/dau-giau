@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dau-giau/static/css/main.5f361e03.chunk.css",
+    "main.js": "/dau-giau/static/js/main.2798e138.chunk.js",
+    "main.js.map": "/dau-giau/static/js/main.2798e138.chunk.js.map",
+    "runtime-main.js": "/dau-giau/static/js/runtime-main.1ee8062f.js",
+    "runtime-main.js.map": "/dau-giau/static/js/runtime-main.1ee8062f.js.map",
+    "static/js/2.d62649a5.chunk.js": "/dau-giau/static/js/2.d62649a5.chunk.js",
+    "static/js/2.d62649a5.chunk.js.map": "/dau-giau/static/js/2.d62649a5.chunk.js.map",
+    "index.html": "/dau-giau/index.html",
+    "precache-manifest.f6d6ae47b99cd0156581ef483c3caf7a.js": "/dau-giau/precache-manifest.f6d6ae47b99cd0156581ef483c3caf7a.js",
+    "service-worker.js": "/dau-giau/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/dau-giau/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.d62649a5.chunk.js.LICENSE.txt": "/dau-giau/static/js/2.d62649a5.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/dau-giau/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1ee8062f.js",
+    "static/js/2.d62649a5.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.2798e138.chunk.js"
+  ]
+}
