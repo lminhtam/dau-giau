@@ -4,7 +4,7 @@ import "./home.css";
 
 function Home(props) {
   return (
-    <div className="background" style={{ width: "100%", height: "100%" }}>
+    <div className="background">
       <Link to="/campaign">
         <h1 style={{ color: "white" }}>CAMPAIGN</h1>
       </Link>
