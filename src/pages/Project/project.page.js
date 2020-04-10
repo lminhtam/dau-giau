@@ -1,10 +1,11 @@
 import React from "react";
 import "../../App.css";
+import FixedButton from '../../shared/fixedButton/fixedBtn'
 
 function Project(props) {
   return (
-    <div className="pageBg">
-      <h1>Project nè</h1>
+    <div style={{backgroundColor: '#121212'}}>
+      <FixedButton />
     </div>
   );
 }

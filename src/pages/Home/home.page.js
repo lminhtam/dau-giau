@@ -6,16 +6,15 @@ function Home(props) {
   return (
     <div className="background">
       <Link to="/campaign">
-        <h1 style={{ color: "white" }}>CAMPAIGN</h1>
+        <h1 style={{ color: "white", fontSize: '6vw' }}>CAMPAIGN</h1>
       </Link>
       <img
-        src="../../assets/icon/logo.png"
+        src={require('../../assets/icon/logoBig.png')}
         alt="Logo"
-        height="100"
-        width="100"
+        style={{width: '12vw'}}
       ></img>
       <Link to="/project">
-        <h1 style={{ color: "white" }}>PROJECT</h1>
+        <h1 style={{ color: "white", fontSize: '6vw'}}>PROJECT</h1>
       </Link>
     </div>
   );
