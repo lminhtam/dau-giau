@@ -4,6 +4,7 @@ import "./App.css";
 import Home from "./pages/Home/home.page";
 import Project from "./pages/Project/project.page";
 import Campaign from "./pages/Campaign/campaign.page";
+import Menu from "./pages/Menu/menu.page";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         </Route>
         <Route path="/campaign">
           <Campaign />
+        </Route>
+        <Route path="/menu">
+          <Menu />
         </Route>
       </div>
     </Router>

@@ -1,7 +1,36 @@
 .pageBg {
+  background-color: '#121212';
+}
+
+.btnTitle {
+  font-size: 4vw;
+  color: white;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  border: 0.5vw solid #ffffff;
+  width: fit-content;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+.titleContainer {
+  display: flex;
+  flex: 2;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+}
+
+.pineContainer {
   display: flex;
   flex: 1;
-  width: 100vw;
-  height: 100vh;
-  background-color: '#121212';
+  justify-content: center;
+  align-items: center;
 }
