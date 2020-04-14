@@ -2,17 +2,6 @@
   background-color: '#121212';
 }
 
-.btnTitle {
-  font-size: 4vw;
-  color: white;
-  padding-left: 4vw;
-  padding-right: 4vw;
-  padding-top: 2vw;
-  padding-bottom: 2vw;
-  border: 0.5vw solid #ffffff;
-  width: fit-content;
-}
-
 .link {
   text-decoration: none;
   color: white;
