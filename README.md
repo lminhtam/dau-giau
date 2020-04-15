@@ -27,8 +27,9 @@ Sau đó, ta tiến hành đẩy branch của mình dưới local lên repo đ�
  `git add <file name>` và `git commit -m "mess"`
  
  Lưu ý lần sau trước khi code, ta cần phải luôn kiểm tra xem code trên master có merge hay thay đổi gì hông:
+ 
  `git pull origin master`
  
- ##Build code để chạy thử: 
+ ## Build code để chạy thử: 
  `yarn start` hoặc `npm start`
  
