@@ -1,4 +1,4 @@
-.pageBg {
+/* .pageBg {
   background-color: '#121212';
 }
 
@@ -22,4 +22,125 @@
   flex: 1;
   justify-content: center;
   align-items: center;
+} */
+
+body {
+  position: relative;
+  width: 1920px;
+  height: 1024px;
+  background: #141414;
+}
+#background {
+  position: absolute;
+  width: 1819px;
+  height: 899px;
+  left: 50px;
+  top: 62px;
+}
+#compaign {
+  position: absolute;
+  left: 380px;
+  top: 616px;
+
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 120px;
+  text-align: right;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+#border-campaign {
+  position: absolute;
+  width: 624px;
+  height: 206px;
+  left: 209px;
+  top: 578px;
+}
+#project {
+  position: absolute;
+  left: 1155px;
+  top: 295px;
+
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 120px;
+  line-height: 120px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+#border-project {
+  position: absolute;
+  width: 624px;
+  height: 206px;
+  left: 1078px;
+  top: 233px;
+}
+#logo {
+  position: absolute;
+  left: 43.3%;
+  right: 50%;
+  top: 22.7%;
+}
+#play {
+  position: absolute;
+  width: 50px;
+  height: 33px;
+  left: calc(50% - 85px / 2 + 7.5px + 18px);
+  top: calc(50% - 86px / 2 + 359px + 26px);
+}
+#rectangle {
+  position: absolute;
+  width: 85px;
+  height: 86px;
+  left: calc(50% - 85px / 2 + 7.5px);
+  top: calc(50% - 86px / 2 + 359px);
+  background: #ff0000;
+  mix-blend-mode: multiply;
+}
+#mat1 {
+  position: absolute;
+  width: 136px;
+  height: 81px;
+  left: 651px;
+  top: 468px;
+}
+#mat2 {
+  position: absolute;
+  width: 136px;
+  height: 81px;
+  left: 1124px;
+  top: 468px;
+}
+#filter-campaign {
+  position: absolute;
+  width: 659px;
+  height: 195px;
+  left: 91px;
+  top: 648px;
+
+  background: #0066ff;
+  mix-blend-mode: multiply;
+}
+#filter-project {
+  position: absolute;
+  width: 659px;
+  height: 195px;
+  left: 1201px;
+  top: 157px;
+
+  background: #ff00e5;
+  mix-blend-mode: multiply;
+}
+#filter-logo {
+  position: absolute;
+  left: 51%;
+  right: 0%;
+  top: 10%;
+  bottom: 40.94%;
+
+  background: #ffff00;
+  mix-blend-mode: multiply;
 }
