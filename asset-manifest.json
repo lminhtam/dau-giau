@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/dau-giau/static/css/main.144120f0.chunk.css",
-    "main.js": "/dau-giau/static/js/main.b7f16a08.chunk.js",
-    "main.js.map": "/dau-giau/static/js/main.b7f16a08.chunk.js.map",
+    "main.css": "/dau-giau/static/css/main.d0876c7a.chunk.css",
+    "main.js": "/dau-giau/static/js/main.3ba2f61a.chunk.js",
+    "main.js.map": "/dau-giau/static/js/main.3ba2f61a.chunk.js.map",
     "runtime-main.js": "/dau-giau/static/js/runtime-main.1ee8062f.js",
     "runtime-main.js.map": "/dau-giau/static/js/runtime-main.1ee8062f.js.map",
     "static/css/2.9d9314c1.chunk.css": "/dau-giau/static/css/2.9d9314c1.chunk.css",
-    "static/js/2.a81549e3.chunk.js": "/dau-giau/static/js/2.a81549e3.chunk.js",
-    "static/js/2.a81549e3.chunk.js.map": "/dau-giau/static/js/2.a81549e3.chunk.js.map",
+    "static/js/2.776f853d.chunk.js": "/dau-giau/static/js/2.776f853d.chunk.js",
+    "static/js/2.776f853d.chunk.js.map": "/dau-giau/static/js/2.776f853d.chunk.js.map",
     "index.html": "/dau-giau/index.html",
-    "precache-manifest.c5d5d99cf160aa4b64aaef6be1ec32bf.js": "/dau-giau/precache-manifest.c5d5d99cf160aa4b64aaef6be1ec32bf.js",
+    "precache-manifest.86c7a2e5df83406f5a5c72997ac3febf.js": "/dau-giau/precache-manifest.86c7a2e5df83406f5a5c72997ac3febf.js",
     "service-worker.js": "/dau-giau/service-worker.js",
     "static/css/2.9d9314c1.chunk.css.map": "/dau-giau/static/css/2.9d9314c1.chunk.css.map",
-    "static/css/main.144120f0.chunk.css.map": "/dau-giau/static/css/main.144120f0.chunk.css.map",
-    "static/js/2.a81549e3.chunk.js.LICENSE.txt": "/dau-giau/static/js/2.a81549e3.chunk.js.LICENSE.txt",
+    "static/css/main.d0876c7a.chunk.css.map": "/dau-giau/static/css/main.d0876c7a.chunk.css.map",
+    "static/js/2.776f853d.chunk.js.LICENSE.txt": "/dau-giau/static/js/2.776f853d.chunk.js.LICENSE.txt",
     "static/media/BebasNeue-Regular.ttf": "/dau-giau/static/media/BebasNeue-Regular.21bb70b6.ttf",
     "static/media/home.css": "/dau-giau/static/media/bg.383ee76a.jpg",
     "static/media/font-awesome.min.css": "/dau-giau/static/media/fontawesome-webfont.fee66e71.woff",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.1ee8062f.js",
     "static/css/2.9d9314c1.chunk.css",
-    "static/js/2.a81549e3.chunk.js",
-    "static/css/main.144120f0.chunk.css",
-    "static/js/main.b7f16a08.chunk.js"
+    "static/js/2.776f853d.chunk.js",
+    "static/css/main.d0876c7a.chunk.css",
+    "static/js/main.3ba2f61a.chunk.js"
   ]
 }

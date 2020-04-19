@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8e3111686e58d133b1a7f10ae58dff92",
+    "revision": "2a6323523332f91315411f712113e894",
     "url": "/dau-giau/index.html"
   },
   {
-    "revision": "93a5b4084c65a6d6f9b0",
+    "revision": "99c16e7a3b0041926e91",
     "url": "/dau-giau/static/css/2.9d9314c1.chunk.css"
   },
   {
-    "revision": "ea89f7315700890f7600",
-    "url": "/dau-giau/static/css/main.144120f0.chunk.css"
+    "revision": "fb97df356af44e940fe8",
+    "url": "/dau-giau/static/css/main.d0876c7a.chunk.css"
   },
   {
-    "revision": "93a5b4084c65a6d6f9b0",
-    "url": "/dau-giau/static/js/2.a81549e3.chunk.js"
+    "revision": "99c16e7a3b0041926e91",
+    "url": "/dau-giau/static/js/2.776f853d.chunk.js"
   },
   {
     "revision": "ad61e5a3703d8af976e070e9896b739a",
-    "url": "/dau-giau/static/js/2.a81549e3.chunk.js.LICENSE.txt"
+    "url": "/dau-giau/static/js/2.776f853d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ea89f7315700890f7600",
-    "url": "/dau-giau/static/js/main.b7f16a08.chunk.js"
+    "revision": "fb97df356af44e940fe8",
+    "url": "/dau-giau/static/js/main.3ba2f61a.chunk.js"
   },
   {
     "revision": "33fff83a7190b22cbdff",
