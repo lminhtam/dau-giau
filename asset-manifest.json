@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dau-giau/static/css/main.a3846a52.chunk.css",
-    "main.js": "/dau-giau/static/js/main.859123dc.chunk.js",
-    "main.js.map": "/dau-giau/static/js/main.859123dc.chunk.js.map",
+    "main.css": "/dau-giau/static/css/main.c9c6ea94.chunk.css",
+    "main.js": "/dau-giau/static/js/main.36834886.chunk.js",
+    "main.js.map": "/dau-giau/static/js/main.36834886.chunk.js.map",
     "runtime-main.js": "/dau-giau/static/js/runtime-main.1ee8062f.js",
     "runtime-main.js.map": "/dau-giau/static/js/runtime-main.1ee8062f.js.map",
     "static/css/2.9d9314c1.chunk.css": "/dau-giau/static/css/2.9d9314c1.chunk.css",
     "static/js/2.a81549e3.chunk.js": "/dau-giau/static/js/2.a81549e3.chunk.js",
     "static/js/2.a81549e3.chunk.js.map": "/dau-giau/static/js/2.a81549e3.chunk.js.map",
     "index.html": "/dau-giau/index.html",
-    "precache-manifest.802757bb923f5307526538d3f4a0a9ec.js": "/dau-giau/precache-manifest.802757bb923f5307526538d3f4a0a9ec.js",
+    "precache-manifest.54ac844f425227cf4735562e44b1e8b2.js": "/dau-giau/precache-manifest.54ac844f425227cf4735562e44b1e8b2.js",
     "service-worker.js": "/dau-giau/service-worker.js",
     "static/css/2.9d9314c1.chunk.css.map": "/dau-giau/static/css/2.9d9314c1.chunk.css.map",
-    "static/css/main.a3846a52.chunk.css.map": "/dau-giau/static/css/main.a3846a52.chunk.css.map",
+    "static/css/main.c9c6ea94.chunk.css.map": "/dau-giau/static/css/main.c9c6ea94.chunk.css.map",
     "static/js/2.a81549e3.chunk.js.LICENSE.txt": "/dau-giau/static/js/2.a81549e3.chunk.js.LICENSE.txt",
     "static/media/BebasNeue-Regular.ttf": "/dau-giau/static/media/BebasNeue-Regular.21bb70b6.ttf",
     "static/media/home.css": "/dau-giau/static/media/bg.383ee76a.jpg",
@@ -26,7 +26,7 @@
     "static/js/runtime-main.1ee8062f.js",
     "static/css/2.9d9314c1.chunk.css",
     "static/js/2.a81549e3.chunk.js",
-    "static/css/main.a3846a52.chunk.css",
-    "static/js/main.859123dc.chunk.js"
+    "static/css/main.c9c6ea94.chunk.css",
+    "static/js/main.36834886.chunk.js"
   ]
 }
