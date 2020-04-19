@@ -46,7 +46,7 @@ function Home(props) {
           src={require("../../assets/icon/Rectangle 1.png")}
           alt="filter"
         /> */}
-          <div>
+          {/* <div>
             <img
               className="play"
               src={require("../../assets/icon/Group.png")}
@@ -57,7 +57,7 @@ function Home(props) {
               src={require("../../assets/icon/Rectangle 3.png")}
               alt="bg"
             />
-          </div>
+          </div> */}
         </div>
         <div className="wrapRight">
           <Link to="/project" className="linkRight">
