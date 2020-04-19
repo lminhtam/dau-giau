@@ -37,6 +37,7 @@
 .flipTitile {
   font-size: 6vw;
   color: transparent;
+  display: flex;
   padding-left: 5.5vw;
   padding-right: 3vw;
   padding-top: 0.5vh;
@@ -52,13 +53,13 @@
   width: 100vw;
   height: 100vh;
   background: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .background {
-  position: absolute;
-  width: 90vw;
+  width: 94vw;
   height: 90vh;
-  left: 5vw;
-  top: 5vh;
   background-image: url(../../assets/images/bg.jpg);
   display: flex;
   flex-direction: row;
@@ -80,6 +81,77 @@
   height: 50vh;
   justify-content: space-between;
 }
+
+.gameWrap {
+  position: absolute;
+  display: flex;
+  width: 4vmax;
+  height: 6vmin;
+  justify-content: center;
+  align-items: center;
+  left: 48vw;
+  bottom: 15vh;
+}
+.play {
+  width: 2vmax;
+  height: 3vmin;
+}
+.rectangle {
+  width: 4vmax;
+  height: 6vmin;
+  background: #ff0000;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mat1 {
+  width: 25%;
+  height: 25%;
+  margin-right: 2vw;
+}
+.mat2 {
+  width: 25%;
+  height: 25%;
+  margin-left: 2vw;
+}
+
+.filter-campaign {
+  position: absolute;
+  width: 30vw;
+  height: 16vh;
+  /* right: 56.5vw;
+  bottom: 25vh; */
+  right: 65vw;
+  bottom: 18vh;
+
+  background: #0066ff;
+  mix-blend-mode: multiply;
+}
+.filter-project {
+  position: absolute;
+  width: 30vw;
+  height: 16vh;
+  /* left: 56.5vw;
+  top: 25vh; */
+  left: 65vw;
+  top: 18vh;
+
+  background: #ff00e5;
+  mix-blend-mode: multiply;
+}
+.filter-logo {
+  position: absolute;
+  left: 51%;
+  right: 0%;
+  top: 10%;
+  bottom: 40.94%;
+
+  background: #ffff00;
+  mix-blend-mode: multiply;
+}
+
 .compaign {
   font-family: Bebas Neue;
   font-style: normal;
@@ -126,59 +198,6 @@
   right: 50%;
   top: 22.7%;
 }
-.play {
-  /* position: absolute; */
-  width: 5vw;
-  height: 5vh;
-  /* bottom: 4vh;
-  left: 45vw; */
-}
-.rectangle {
-  /* position: absolute; */
-  width: 7vw;
-  height: 10vh;
-  /* left: calc(50% - 85px / 2 + 7.5px);
-  top: calc(50% - 86px / 2 + 359px); */
-  background: #ff0000;
-  mix-blend-mode: multiply;
-}
-.mat1 {
-  width: 25%;
-  height: 25%;
-  margin-right: 2vw;
-}
-.mat2 {
-  width: 25%;
-  height: 25%;
-  margin-left: 2vw;
-}
-.filter-campaign {
-  position: absolute;
-  width: 659px;
-  height: 195px;
-  left: 91px;
-  top: 648px;
 
-  background: #0066ff;
-  mix-blend-mode: multiply;
-}
-.filter-project {
-  position: absolute;
-  width: 659px;
-  height: 195px;
-  left: 1201px;
-  top: 157px;
 
-  background: #ff00e5;
-  mix-blend-mode: multiply;
-}
-.filter-logo {
-  position: absolute;
-  left: 51%;
-  right: 0%;
-  top: 10%;
-  bottom: 40.94%;
 
-  background: #ffff00;
-  mix-blend-mode: multiply;
-}

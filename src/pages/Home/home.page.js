@@ -4,19 +4,6 @@ import "./home.css";
 
 function Home(props) {
   return (
-    // <div className="background">
-    //   <Link to="/campaign" className="link">
-    //     <p className="btnTitle">CAMPAIGN</p>
-    //   </Link>
-    //   <img
-    //     src={require("../../assets/icon/logoBig.png")})}
-    //     alt="Logo"
-    //     style={{ width: "12vw" }}
-    //   ></img>
-    //   <Link to="/project" className="link">
-    //     <p className="btnTitle">PROJECT</p>
-    //   </Link>
-    // </div>
     <div className="wrap">
       <div className="background">
         <div className="wrapLeft">
@@ -29,15 +16,15 @@ function Home(props) {
           <Link to="/campaign" className="linkLeft">
             CAMPAIGN
           </Link>
-          {/* <img
-              className="filter-campaign"
-              src={require("../../assets/icon/Rectangle 53.png")}
-              alt="filter"
-            /> */}
-        </div>
-        <div>
           <img
-            style={{ height: "50vh" }}
+            className="filter-campaign"
+            src={require("../../assets/icon/Rectangle 53.png")}
+            alt="filter"
+          />
+        </div>
+        <div style={{ height: "50vmin", width: '13vmax' }}>
+          <img
+            style={{ height: "100%", width: "100%" }}
             src={require("../../assets/icon/logoBig.png")}
             alt="logo"
           />
@@ -46,7 +33,7 @@ function Home(props) {
           src={require("../../assets/icon/Rectangle 1.png")}
           alt="filter"
         /> */}
-          {/* <div>
+          <div className="gameWrap">
             <img
               className="play"
               src={require("../../assets/icon/Group.png")}
@@ -57,17 +44,17 @@ function Home(props) {
               src={require("../../assets/icon/Rectangle 3.png")}
               alt="bg"
             />
-          </div> */}
+          </div>
         </div>
         <div className="wrapRight">
           <Link to="/project" className="linkRight">
             PROJECT
           </Link>
-          {/* <img
+          <img
             className="filter-project"
             src={require("../../assets/icon/Rectangle 54.png")}
             alt="filter"
-          /> */}
+          />
           <img
             className="mat2"
             src={require("../../assets/icon/mat.svg")}
