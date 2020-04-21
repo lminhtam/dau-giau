@@ -6,14 +6,16 @@ import { Link } from "react-router-dom";
 export default class FixedButton extends React.Component {
   render() {
     return (
-      <div className="container">
-        <img
-          src={require("../../assets/icon/logo.png")}
-          alt="Logo"
-          style={{ width: "3vw" }}
-          className="logo"
-        />
-        <Link to="/menu" style={{textDecoration: 'none'}}>
+      <div>
+        <Link to="/" style={{ textDecoration: "none" }}>
+          <img
+            src={require("../../assets/icon/logo.png")}
+            alt="Logo"
+            style={{ width: "3vw" }}
+            className="logo"
+          />
+        </Link>
+        <Link to="/menu" style={{ textDecoration: "none" }}>
           <i
             className="fa fa-bars"
             style={{

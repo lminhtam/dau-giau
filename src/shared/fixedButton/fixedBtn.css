@@ -1,43 +1,42 @@
-.container {
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
-}
-
 .logo {
-  position: absolute;
+  position: fixed;
   top: 2vh;
   left: 2vw;
   z-index: 100;
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 2vh;
   right: 2vw;
   z-index: 100;
 }
 
 .rightBot {
-  position: absolute;
+  position: fixed;
   bottom: 2vh;
-  right: -1vw;
+  right: 1vw;
   z-index: 100;
-}
-
-.leftBot {
-  position: absolute;
-  bottom: 2vh;
-  left: -1vw;
-  z-index: 100;
-}
-
-.container h3 {
   font-size: 3vw;
   font-weight: 300;
-  color: #121212;
+  color: black;
   transform: rotate(90deg);
   text-shadow: #fff 0px 0px 2px,   #fff 0px 0px 2px,   #fff 0px 0px 2px,
              #fff 0px 0px 2px,   #fff 0px 0px 2px,   #fff 0px 0px 2px;
   -webkit-font-smoothing: antialiased;
 }
+
+.leftBot {
+  position: fixed;
+  bottom: 2vh;
+  left: -1vw;
+  z-index: 100;
+  font-size: 3vw;
+  font-weight: 300;
+  color: black;
+  transform: rotate(90deg);
+  text-shadow: #fff 0px 0px 2px,   #fff 0px 0px 2px,   #fff 0px 0px 2px,
+             #fff 0px 0px 2px,   #fff 0px 0px 2px,   #fff 0px 0px 2px;
+  -webkit-font-smoothing: antialiased;
+}
+
