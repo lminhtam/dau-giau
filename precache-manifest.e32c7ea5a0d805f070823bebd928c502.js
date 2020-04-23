@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aafe12b4d3b9be56b742a6c1a64d108b",
+    "revision": "e326bcebe2ba2904942079ce68a170a7",
     "url": "/dau-giau/index.html"
   },
   {
-    "revision": "b6ccd090db4ea3942e9b",
+    "revision": "9b1e57c8450d53f6da35",
     "url": "/dau-giau/static/css/2.9d9314c1.chunk.css"
   },
   {
-    "revision": "85bc935d774d0bb700a8",
-    "url": "/dau-giau/static/css/main.b826d362.chunk.css"
+    "revision": "9c964e801d270c0d9bbf",
+    "url": "/dau-giau/static/css/main.13308106.chunk.css"
   },
   {
-    "revision": "b6ccd090db4ea3942e9b",
-    "url": "/dau-giau/static/js/2.22618228.chunk.js"
+    "revision": "9b1e57c8450d53f6da35",
+    "url": "/dau-giau/static/js/2.d0721fd5.chunk.js"
   },
   {
     "revision": "ad61e5a3703d8af976e070e9896b739a",
-    "url": "/dau-giau/static/js/2.22618228.chunk.js.LICENSE.txt"
+    "url": "/dau-giau/static/js/2.d0721fd5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "85bc935d774d0bb700a8",
-    "url": "/dau-giau/static/js/main.c10fd1c6.chunk.js"
+    "revision": "9c964e801d270c0d9bbf",
+    "url": "/dau-giau/static/js/main.23fd8ae3.chunk.js"
   },
   {
     "revision": "33fff83a7190b22cbdff",
@@ -56,10 +56,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/dau-giau/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "3b01d17d53737b76f95d019b21942ad9",
-    "url": "/dau-giau/static/media/game.3b01d17d.svg"
-  },
-  {
     "revision": "f4d6180d5f6aba116ce0100ba4b7e9c6",
     "url": "/dau-giau/static/media/logo-MAT.f4d6180d.png"
   },
@@ -70,9 +66,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c5b4f9addf19d79472bb2665e363dff8",
     "url": "/dau-giau/static/media/mat.c5b4f9ad.svg"
-  },
-  {
-    "revision": "655c2b0eb54c4e173b00f1889df0b0e1",
-    "url": "/dau-giau/static/media/pine.655c2b0e.png"
   }
 ]);

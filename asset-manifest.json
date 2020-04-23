@@ -1,33 +1,31 @@
 {
   "files": {
-    "main.css": "/dau-giau/static/css/main.b826d362.chunk.css",
-    "main.js": "/dau-giau/static/js/main.c10fd1c6.chunk.js",
-    "main.js.map": "/dau-giau/static/js/main.c10fd1c6.chunk.js.map",
+    "main.css": "/dau-giau/static/css/main.13308106.chunk.css",
+    "main.js": "/dau-giau/static/js/main.23fd8ae3.chunk.js",
+    "main.js.map": "/dau-giau/static/js/main.23fd8ae3.chunk.js.map",
     "runtime-main.js": "/dau-giau/static/js/runtime-main.1ee8062f.js",
     "runtime-main.js.map": "/dau-giau/static/js/runtime-main.1ee8062f.js.map",
     "static/css/2.9d9314c1.chunk.css": "/dau-giau/static/css/2.9d9314c1.chunk.css",
-    "static/js/2.22618228.chunk.js": "/dau-giau/static/js/2.22618228.chunk.js",
-    "static/js/2.22618228.chunk.js.map": "/dau-giau/static/js/2.22618228.chunk.js.map",
+    "static/js/2.d0721fd5.chunk.js": "/dau-giau/static/js/2.d0721fd5.chunk.js",
+    "static/js/2.d0721fd5.chunk.js.map": "/dau-giau/static/js/2.d0721fd5.chunk.js.map",
     "index.html": "/dau-giau/index.html",
-    "precache-manifest.661e1c0f87d1c7be608759373b6cf22c.js": "/dau-giau/precache-manifest.661e1c0f87d1c7be608759373b6cf22c.js",
+    "precache-manifest.e32c7ea5a0d805f070823bebd928c502.js": "/dau-giau/precache-manifest.e32c7ea5a0d805f070823bebd928c502.js",
     "service-worker.js": "/dau-giau/service-worker.js",
     "static/css/2.9d9314c1.chunk.css.map": "/dau-giau/static/css/2.9d9314c1.chunk.css.map",
-    "static/css/main.b826d362.chunk.css.map": "/dau-giau/static/css/main.b826d362.chunk.css.map",
-    "static/js/2.22618228.chunk.js.LICENSE.txt": "/dau-giau/static/js/2.22618228.chunk.js.LICENSE.txt",
+    "static/css/main.13308106.chunk.css.map": "/dau-giau/static/css/main.13308106.chunk.css.map",
+    "static/js/2.d0721fd5.chunk.js.LICENSE.txt": "/dau-giau/static/js/2.d0721fd5.chunk.js.LICENSE.txt",
     "static/media/BebasNeue-Regular.ttf": "/dau-giau/static/media/BebasNeue-Regular.21bb70b6.ttf",
     "static/media/home.css": "/dau-giau/static/media/bg.383ee76a.jpg",
     "static/media/font-awesome.min.css": "/dau-giau/static/media/fontawesome-webfont.fee66e71.woff",
-    "static/media/game.svg": "/dau-giau/static/media/game.3b01d17d.svg",
     "static/media/logo-MAT.png": "/dau-giau/static/media/logo-MAT.f4d6180d.png",
     "static/media/logoBig.png": "/dau-giau/static/media/logoBig.925f8fe9.png",
-    "static/media/mat.svg": "/dau-giau/static/media/mat.c5b4f9ad.svg",
-    "static/media/pine.png": "/dau-giau/static/media/pine.655c2b0e.png"
+    "static/media/mat.svg": "/dau-giau/static/media/mat.c5b4f9ad.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1ee8062f.js",
     "static/css/2.9d9314c1.chunk.css",
-    "static/js/2.22618228.chunk.js",
-    "static/css/main.b826d362.chunk.css",
-    "static/js/main.c10fd1c6.chunk.js"
+    "static/js/2.d0721fd5.chunk.js",
+    "static/css/main.13308106.chunk.css",
+    "static/js/main.23fd8ae3.chunk.js"
   ]
 }
