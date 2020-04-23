@@ -1,15 +1,15 @@
-.logo {
+#logo {
   position: fixed;
   top: 2vh;
   left: 2vw;
   z-index: 100;
 }
 
-.menu {
+#rightTop {
   position: fixed;
   top: 2vh;
   right: 2vw;
-  z-index: 100;
+  color: white;
 }
 
 .rightBot {
@@ -17,12 +17,12 @@
   bottom: 2vh;
   right: 1vw;
   z-index: 100;
-  font-size: 3vw;
+  font-size: 3vmax;
   font-weight: 300;
   color: black;
   transform: rotate(90deg);
-  text-shadow: #fff 0px 0px 2px,   #fff 0px 0px 2px,   #fff 0px 0px 2px,
-             #fff 0px 0px 2px,   #fff 0px 0px 2px,   #fff 0px 0px 2px;
+  text-shadow: #fff 0px 0px 2px, #fff 0px 0px 2px, #fff 0px 0px 2px,
+    #fff 0px 0px 2px, #fff 0px 0px 2px, #fff 0px 0px 2px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -31,12 +31,40 @@
   bottom: 2vh;
   left: -1vw;
   z-index: 100;
-  font-size: 3vw;
+  font-size: 3vmax;
   font-weight: 300;
   color: black;
   transform: rotate(90deg);
-  text-shadow: #fff 0px 0px 2px,   #fff 0px 0px 2px,   #fff 0px 0px 2px,
-             #fff 0px 0px 2px,   #fff 0px 0px 2px,   #fff 0px 0px 2px;
+  text-shadow: #fff 0px 0px 2px, #fff 0px 0px 2px, #fff 0px 0px 2px,
+    #fff 0px 0px 2px, #fff 0px 0px 2px, #fff 0px 0px 2px;
   -webkit-font-smoothing: antialiased;
 }
 
+#close {
+  position: fixed;
+  width: 2.866vmax;
+  right: 2vw;
+  top: 2vh;
+}
+
+#gameWrap {
+  position: absolute;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+#play {
+  padding-top: 1vh;
+  width: 4vmax;
+}
+#rectangle {
+  width: 4vmax;
+  height: 3.5vmax;
+  background-color: #ff0000;
+  mix-blend-mode: multiply;
+  position: absolute;
+  margin-top: 1vh;
+  bottom: 0;
+  left: 0;
+}

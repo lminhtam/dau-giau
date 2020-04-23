@@ -1,10 +1,12 @@
 import React from "react";
 import "../../App.css";
+import FixedButton from "../../shared/fixedButton/fixedBtn";
 
 function Campaign(props) {
   return (
     <div className="pageBg">
-      <h1>Campaign nè</h1>
+      <FixedButton />
+      <h1 style={{color:'white'}}>Campaign nè</h1>
     </div>
   );
 }
