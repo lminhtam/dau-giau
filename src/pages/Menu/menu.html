@@ -119,20 +119,15 @@
                 position: absolute;
                 width: 163px;
                 height: 163px;
-
-                left: 0%;
-                right: 4.12%;
-                top: 15.54%;
-                bottom: 0%;
+                left: calc(50% - 163px/2 - 3.5px);
+                top: calc(50% - 163px/2 + 15px);
             }
-            #pine-circle{
+            #pine-circle{    
                 position: absolute;
                 width: 96px;
                 height: 96px;
-                left: 43.53%;
-                right: 0%;
-                top: 0%;
-                bottom: 50.26%;
+                left: calc(50% - 96px/2 + 37px);
+                top: calc(50% - 96px/2 - 48.5px);
                 mix-blend-mode: multiply;
             }
         </style>
@@ -146,28 +141,28 @@
             <div class="close">
                 <img src="/src/assets/icon/close.png" alt="close">
             </div>
-            <div class="menu">
-                <div class="campaign">
-                    <h1 id="text">CAMPAIGN</h1>
-                    <img id="filter-campaign" src="/src/assets/icon/menu-filter-camoaign.png" alt="filter-campaign">
-                </div>
-                <div class="project">
-                    <h1 id="text">PROJECT</h1>
-                    <img id="filter-project" src="/src/assets/icon/menu-flter-project.png" alt="filter-project">
-                </div>
-                <div class="contact-us">
-                    <h1 id="text">CONTACT US</h1>
-                    <img id="filter-contact-us" src="/src/assets/icon/menu-filter-contact-us.png" alt="filter-contact-us">
-                </div>
+        </div>
+        <div class="menu">
+            <div class="campaign">
+                <h1 id="text">CAMPAIGN</h1>
+                <img id="filter-campaign" src="/src/assets/icon/menu-filter-camoaign.png" alt="filter-campaign">
             </div>
-            <div class="element1">
-               <img id="pines" src="/src/assets/icon/element-pines.png" alt="pine">
-               <img id="pine-circle" src="/src/assets/icon/element-pines-circle.png" alt="pine-circle">
+            <div class="project">
+                <h1 id="text">PROJECT</h1>
+                <img id="filter-project" src="/src/assets/icon/menu-flter-project.png" alt="filter-project">
             </div>
-            <div class="element2">
-                <img id="pines" src="/src/assets/icon/element-pines.png" alt="pine">
-                <img id="pine-circle" src="/src/assets/icon/element-pines-circle.png" alt="pine-circle">
+            <div class="contact-us">
+                <h1 id="text">CONTACT US</h1>
+                <img id="filter-contact-us" src="/src/assets/icon/menu-filter-contact-us.png" alt="filter-contact-us">
             </div>
+        </div>
+        <div class="element1">
+            <img id="pines" src="/src/assets/icon/element-pines.png" alt="pine">
+            <img id="pine-circle" src="/src/assets/icon/element-pines-circle.png" alt="pine-circle">
+        </div>
+        <div class="element2">
+            <img id="pines" src="/src/assets/icon/element-pines.png" alt="pine">
+            <img id="pine-circle" src="/src/assets/icon/element-pines-circle.png" alt="pine-circle">
         </div>
     </body>
 </html>

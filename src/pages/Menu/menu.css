@@ -1,0 +1,128 @@
+body{
+    background-color: #141414;
+}
+.logo {
+    position: absolute;
+    width: 4.3vw;
+    height: 8.131vh;
+
+    left: 5.2%;
+    top: 7.4%;
+}
+#logo{
+    position: absolute;
+    width: 50px;
+    height: 110px;
+
+    left: 0%;
+    right: 24.7%;
+    top: 17.98%;
+    bottom: 0%;
+}
+#filter-logo{
+    position: absolute;
+    width: 36px;
+    height: 80px;
+    left: 45.43%;
+    right: 0%;
+    top: 0%;
+    bottom: 40.868%;
+    mix-blend-mode: multiply;
+}
+.close{
+    position: absolute;
+    width: 2.866vw;
+    height: 2.43vh;
+    left: 92.5%;
+    top: 9.766%;
+}
+.campaign{
+    position: absolute;
+    left: 26.93%;
+    right: 26.93%;
+    top: 25.2%;
+    bottom: 62.3%;
+
+}
+.project{
+    position: absolute;
+    left: 26.93%;
+    right: 26.93%;
+    top: 45.21%;
+    bottom: 42.29%;
+
+}
+.contact-us{
+    position: absolute;
+    left: 26.93%;
+    right: 26.93%;
+    top: 65.23%;
+    bottom: 22.27%;
+}
+#text{
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+#filter-campaign{
+    position: absolute;
+    width: 886px;
+    height: 25px;
+    left: calc(50% - 886px/2);
+    top: 86px;
+    mix-blend-mode: multiply;
+}
+#filter-project{
+    position: absolute;
+    width: 886px;
+    height: 25px;
+    left: calc(50% - 886px/2);
+    top: 85px;
+    mix-blend-mode: multiply;
+}
+#filter-contact-us{
+    position: absolute;
+    width: 886px;
+    height: 25px;
+    left: calc(50% - 886px/2);
+    top: 86px;
+
+    mix-blend-mode: multiply;
+}
+.element1{
+    position: absolute;
+    left: 15.99%;
+    right: 75.16%;
+    top: 40.62%;
+    bottom: 40.53%;
+}
+.element2{
+    position: absolute;
+    left: 76.3%;
+    right: 14.84%;
+    top: 40.62%;
+    bottom: 40.53%;
+}
+#pines{
+    position: absolute;
+    width: 163px;
+    height: 163px;
+    left: calc(50% - 163px/2 - 3.5px);
+    top: calc(50% - 163px/2 + 15px);
+}
+#pine-circle{
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    left: calc(50% - 96px/2 + 37px);
+    top: calc(50% - 96px/2 - 48.5px);
+    mix-blend-mode: multiply;
+}
