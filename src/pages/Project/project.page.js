@@ -46,9 +46,14 @@ function Project(props) {
       >
         <div className="pineContainer">
           <img
+            className="pines"
+            src={require("../../assets/icon/element-pines.png")}
             alt="pine"
-            style={{ width: "5vw" }}
-            src={require("../../assets/icon/pine.png")}
+          />
+          <img
+            className="pine-circle"
+            src={require("../../assets/icon/element-pines-circle.png")}
+            alt="pine-circle"
           />
         </div>
         <div className="titleContainer">
@@ -87,9 +92,14 @@ function Project(props) {
         </div>
         <div className="pineContainer">
           <img
+            className="pines"
+            src={require("../../assets/icon/element-pines.png")}
             alt="pine"
-            style={{ width: "5vw" }}
-            src={require("../../assets/icon/pine.png")}
+          />
+          <img
+            className="pine-circle-right"
+            src={require("../../assets/icon/element-pines-circle.png")}
+            alt="pine-circle"
           />
         </div>
       </div>

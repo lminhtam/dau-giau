@@ -6,7 +6,7 @@ import Project from "./pages/Project/project.page";
 import Campaign from "./pages/Campaign/campaign.page";
 import Menu from "./pages/Menu/menu.page";
 import Contact from "./pages/Contact/contact.page";
-import Game from './pages/Game/game.page'
+import Game from "./pages/Game/game.page";
 
 function App() {
   return (
