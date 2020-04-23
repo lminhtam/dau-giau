@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line
 import { Link } from "react-router-dom";
 import "./home.css";
 
@@ -33,9 +34,9 @@ function Home(props) {
       <img id="mat2" src={require("../../assets/icon/mat.svg")} alt="mat" />
       <div>
         <img
-          id="compaign"
+          id="campaign"
           src={require("../../assets/icon/campaign.png")}
-          alt="compaign"
+          alt="campaign"
         />
         <img
           id="border-campaign"

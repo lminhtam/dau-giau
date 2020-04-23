@@ -9,7 +9,7 @@ body{
     left: 5.2%;
     top: 7.4%;
 }
-#logo{
+.logoDG{
     position: absolute;
     width: 50px;
     height: 110px;
@@ -19,7 +19,7 @@ body{
     top: 17.98%;
     bottom: 0%;
 }
-#filter-logo{
+.filter-logo{
     position: absolute;
     width: 36px;
     height: 80px;
@@ -27,6 +27,7 @@ body{
     right: 0%;
     top: 0%;
     bottom: 40.868%;
+    z-index: -1;
     mix-blend-mode: multiply;
 }
 .close{
@@ -36,13 +37,18 @@ body{
     left: 92.5%;
     top: 9.766%;
 }
+.menu{
+    position: absolute;
+    left: 26.93%;
+    right: 26.93%;
+}
 .campaign{
     position: absolute;
     left: 26.93%;
     right: 26.93%;
     top: 25.2%;
     bottom: 62.3%;
-
+    margin-top: 25.2%;
 }
 .project{
     position: absolute;
@@ -50,7 +56,7 @@ body{
     right: 26.93%;
     top: 45.21%;
     bottom: 42.29%;
-
+    margin-top: 45.21%;
 }
 .contact-us{
     position: absolute;
@@ -58,21 +64,19 @@ body{
     right: 26.93%;
     top: 65.23%;
     bottom: 22.27%;
+    margin-top: 65.23%;
 }
-#text{
+.text{
     font-family: Bebas Neue;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
     line-height: 72px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
     text-align: center;
     letter-spacing: 0.05em;
     color: #FFFFFF;
 }
-#filter-campaign{
+.filter-campaign{
     position: absolute;
     width: 886px;
     height: 25px;
@@ -80,7 +84,7 @@ body{
     top: 86px;
     mix-blend-mode: multiply;
 }
-#filter-project{
+.filter-project{
     position: absolute;
     width: 886px;
     height: 25px;
@@ -88,13 +92,12 @@ body{
     top: 85px;
     mix-blend-mode: multiply;
 }
-#filter-contact-us{
+.filter-contact-us{
     position: absolute;
     width: 886px;
     height: 25px;
     left: calc(50% - 886px/2);
     top: 86px;
-
     mix-blend-mode: multiply;
 }
 .element1{
@@ -111,14 +114,14 @@ body{
     top: 40.62%;
     bottom: 40.53%;
 }
-#pines{
+.pines{
     position: absolute;
     width: 163px;
     height: 163px;
     left: calc(50% - 163px/2 - 3.5px);
     top: calc(50% - 163px/2 + 15px);
 }
-#pine-circle{
+.pine-circle{
     position: absolute;
     width: 96px;
     height: 96px;
