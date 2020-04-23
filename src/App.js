@@ -5,6 +5,7 @@ import Home from "./pages/Home/home.page";
 import Project from "./pages/Project/project.page";
 import Campaign from "./pages/Campaign/campaign.page";
 import Menu from "./pages/Menu/menu.page";
+import Contact from "./pages/Contact/contact.page";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/menu">
           <Menu />
+        </Route>
+        <Route path="/contact">
+          <Contact />
         </Route>
       </div>
     </Router>
