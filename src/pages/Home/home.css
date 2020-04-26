@@ -62,7 +62,7 @@
 .wrapLeft {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: flex-end;
   height: 50vh;
 }
@@ -71,7 +71,7 @@
   display: flex;
   flex-direction: column;
   height: 50vh;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .gameWrap {
@@ -102,17 +102,19 @@
   width: 25%;
   height: 25%;
   margin-right: 2vw;
+  margin-bottom: 5vh;
 }
 .mat2 {
   width: 25%;
   height: 25%;
   margin-left: 2vw;
+  margin-top: 3vh;
 }
 
 #filter-campaign {
   position: absolute;
-  width: 30vw;
-  height: 16vh;
+  width: 31vw;
+  height: 15vh;
   right: 65vw;
   bottom: 18vh;
 
@@ -122,12 +124,12 @@
 
 #filter-project {
   position: absolute;
-  width: 30vw;
-  height: 16vh;
+  width: 31vw;
+  height: 15vh;
   left: 65vw;
   top: 18vh;
 
-  background: #ff00e5;
+  background-color: #ff00e5;
   mix-blend-mode: multiply;
 }
 .filter-logo {

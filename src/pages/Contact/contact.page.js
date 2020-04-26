@@ -72,7 +72,7 @@ function Contact(props) {
             <div id="iconContainer">
               {socialContact.map((item) => (
                 <a
-                  style={{ paddingRight: "4%" }}
+                  style={{ paddingRight: "1.5vw" }}
                   href={item.link}
                   target="_black"
                 >

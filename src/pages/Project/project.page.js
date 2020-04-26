@@ -33,15 +33,14 @@ const data = [
 function Project(props) {
   const [hoverIndex, setHoverIndex] = useState(-1);
   return (
-    <div>
+    <div className="pageBg">
       <FixedButton />
       <div
         style={{
           backgroundColor: "#121212",
           flexDirection: "row",
           display: "flex",
-          width: "100vw",
-          height: "100vh",
+          flex: 1,
         }}
       >
         <div className="pineContainer">

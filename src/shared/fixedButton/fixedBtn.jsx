@@ -38,23 +38,31 @@ export default class FixedButton extends React.Component {
             </Link>
             {this.props.type !== 3 && (
               <Link to="/game" id="gameWrap">
+                <div id="rectangle" />
                 <img
                   id="play"
                   src={require("../../assets/icon/Group.png")}
                   alt="game"
                 />
-                <div id="rectangle" />
               </Link>
             )}
           </div>
         )}
         {this.props.type === 1 && (
-          <Link to={"/campaign"}>
+          <Link
+            to={"/campaign"}
+            style={{ textDecoration: "none", color: "#FF0000" }}
+          >
+            <div id="triangleLeft" />
             <h3 className="leftBot">CAMPAIGN</h3>
           </Link>
         )}
         {this.props.type === 1 && (
-          <Link to={"/project"}>
+          <Link
+            to={"/project"}
+            style={{ textDecoration: "none", color: "#FFF500" }}
+          >
+            <div id="triangleRight" />
             <h3 className="rightBot">PROJECT</h3>
           </Link>
         )}

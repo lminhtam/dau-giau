@@ -61,10 +61,41 @@
 #rectangle {
   width: 4vmax;
   height: 3.5vmax;
-  background-color: #ff0000;
+  background: #ff0000;
   mix-blend-mode: multiply;
   position: absolute;
   margin-top: 1vh;
   bottom: 0;
   left: 0;
+}
+#triangleRight {
+  position: fixed;
+  bottom: 3.5vh;
+  right: 2.5vw;
+  border-left-width: 2vw;
+  border-right-width: 2vw;
+  border-bottom-width: 4vw;
+  border-top-width: 0px;
+  border-style: solid;
+  background-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  mix-blend-mode: multiply;
+  z-index: 200;
+}
+
+#triangleLeft {
+  position: fixed;
+  bottom: 2.5vh;
+  left: 2vw;
+  border-left-width: 2vw;
+  border-right-width: 2vw;
+  border-bottom-width: 4vw;
+  border-top-width: 0px;
+  border-style: solid;
+  background-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  mix-blend-mode: multiply;
+  z-index: 201;
 }
