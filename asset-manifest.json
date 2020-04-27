@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/dau-giau/static/css/main.723837a0.chunk.css",
-    "main.js": "/dau-giau/static/js/main.520b4bbc.chunk.js",
-    "main.js.map": "/dau-giau/static/js/main.520b4bbc.chunk.js.map",
+    "main.css": "/dau-giau/static/css/main.7e0afa13.chunk.css",
+    "main.js": "/dau-giau/static/js/main.8502349b.chunk.js",
+    "main.js.map": "/dau-giau/static/js/main.8502349b.chunk.js.map",
     "runtime-main.js": "/dau-giau/static/js/runtime-main.1ee8062f.js",
     "runtime-main.js.map": "/dau-giau/static/js/runtime-main.1ee8062f.js.map",
     "static/css/2.9d9314c1.chunk.css": "/dau-giau/static/css/2.9d9314c1.chunk.css",
     "static/js/2.946b0b66.chunk.js": "/dau-giau/static/js/2.946b0b66.chunk.js",
     "static/js/2.946b0b66.chunk.js.map": "/dau-giau/static/js/2.946b0b66.chunk.js.map",
     "index.html": "/dau-giau/index.html",
-    "precache-manifest.5d0775495d19120ad4a12aee4bd0835e.js": "/dau-giau/precache-manifest.5d0775495d19120ad4a12aee4bd0835e.js",
+    "precache-manifest.9498485376db6930e533a3d162c3f4ca.js": "/dau-giau/precache-manifest.9498485376db6930e533a3d162c3f4ca.js",
     "service-worker.js": "/dau-giau/service-worker.js",
     "static/css/2.9d9314c1.chunk.css.map": "/dau-giau/static/css/2.9d9314c1.chunk.css.map",
-    "static/css/main.723837a0.chunk.css.map": "/dau-giau/static/css/main.723837a0.chunk.css.map",
+    "static/css/main.7e0afa13.chunk.css.map": "/dau-giau/static/css/main.7e0afa13.chunk.css.map",
     "static/js/2.946b0b66.chunk.js.LICENSE.txt": "/dau-giau/static/js/2.946b0b66.chunk.js.LICENSE.txt",
     "static/media/BebasNeue-Regular.ttf": "/dau-giau/static/media/BebasNeue-Regular.21bb70b6.ttf",
     "static/media/home.css": "/dau-giau/static/media/bg.383ee76a.jpg",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.1ee8062f.js",
     "static/css/2.9d9314c1.chunk.css",
     "static/js/2.946b0b66.chunk.js",
-    "static/css/main.723837a0.chunk.css",
-    "static/js/main.520b4bbc.chunk.js"
+    "static/css/main.7e0afa13.chunk.css",
+    "static/js/main.8502349b.chunk.js"
   ]
 }
