@@ -44,6 +44,35 @@
   color: #ffffff;
 }
 
+#filter0 {
+  height: 4vh;
+  width: 50%;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+#filter1 {
+  height: 4vh;
+  width: 50%;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+#filter2 {
+  height: 4vh;
+  width: 50%;
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+
+#menuTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 6vh;
+}
+
 /* .filter-campaign {
   position: absolute;
   width: 886px;
@@ -68,4 +97,3 @@
   top: 86px;
   mix-blend-mode: multiply;
 }  */
-

@@ -1,7 +1,7 @@
-import React from "react";
-import "./fixedBtn.css";
 import "font-awesome/css/font-awesome.min.css";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./fixedBtn.css";
 
 export default class FixedButton extends React.Component {
   static defaultProps = {
@@ -54,7 +54,16 @@ export default class FixedButton extends React.Component {
             style={{ textDecoration: "none", color: "#FF0000" }}
           >
             <div id="triangleLeft" />
-            <h3 className="leftBot">CAMPAIGN</h3>
+            <h3
+              className="leftBot"
+              style={{
+                color: this.props.from === "campaign" ? "white" : "black",
+                WebkitTextStroke:
+                  this.props.from === "campaign" ? "0px white" : "1px white",
+              }}
+            >
+              CAMPAIGN
+            </h3>
           </Link>
         )}
         {this.props.type === 1 && (
@@ -63,7 +72,16 @@ export default class FixedButton extends React.Component {
             style={{ textDecoration: "none", color: "#FFF500" }}
           >
             <div id="triangleRight" />
-            <h3 className="rightBot">PROJECT</h3>
+            <h3
+              className="rightBot"
+              style={{
+                color: this.props.from === "project" ? "white" : "black",
+                WebkitTextStroke:
+                  this.props.from === "project" ? "0px white" : "1px white",
+              }}
+            >
+              PROJECT
+            </h3>
           </Link>
         )}
       </div>

@@ -21,8 +21,6 @@
   font-weight: 300;
   color: black;
   transform: rotate(90deg);
-  text-shadow: #fff 0px 0px 2px, #fff 0px 0px 2px, #fff 0px 0px 2px,
-    #fff 0px 0px 2px, #fff 0px 0px 2px, #fff 0px 0px 2px;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -35,8 +33,6 @@
   font-weight: 300;
   color: black;
   transform: rotate(90deg);
-  text-shadow: #fff 0px 0px 2px, #fff 0px 0px 2px, #fff 0px 0px 2px,
-    #fff 0px 0px 2px, #fff 0px 0px 2px, #fff 0px 0px 2px;
   -webkit-font-smoothing: antialiased;
 }
 

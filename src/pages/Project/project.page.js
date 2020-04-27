@@ -34,7 +34,7 @@ function Project(props) {
   const [hoverIndex, setHoverIndex] = useState(-1);
   return (
     <div className="pageBg">
-      <FixedButton />
+      <FixedButton from="project" />
       <div
         style={{
           backgroundColor: "#121212",

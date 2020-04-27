@@ -1,27 +1,32 @@
-import React from "react";
-import "./menu.css";
-import FixedButton from "../../shared/fixedButton/fixedBtn";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { animated, useSpring } from "react-spring";
+import FixedButton from "../../shared/fixedButton/fixedBtn";
+import "./menu.css";
 
 const menuData = [
   {
-    title: 'CAMPAIGN',
-    link: '/campaign',
-    lineColor: '#FF0000',
+    title: "CAMPAIGN",
+    link: "/campaign",
+    lineColor: "#FF0000",
   },
   {
-    title: 'PROJECT',
-    link: '/project',
-    lineColor: '#00D1FF',
+    title: "PROJECT",
+    link: "/project",
+    lineColor: "#00D1FF",
   },
   {
-    title: 'CONTACT US',
-    link: '/contact',
-    lineColor: '#FAFF00',
+    title: "CONTACT US",
+    link: "/contact",
+    lineColor: "#FAFF00",
   },
-]
+];
 
 function Menu(props) {
+  const [hoverIndex, setHoverIndex] = useState(-1);
+  const titleAnimate = useSpring({
+    height: hoverIndex > 0 ? "8vh" : "4vh",
+  });
   return (
     <div id="pageBg">
       <FixedButton type={2} />
@@ -38,10 +43,39 @@ function Menu(props) {
         />
       </div>
       <div id="menuContainer">
-        {menuData.map(item => (
-          <Link to={item.link} style={{textDecoration: 'none', color: 'white'}}>
-            <div>
-              <h1 id='menuTitle'>{item.title}</h1>
+        {menuData.map((item, index) => (
+          <Link
+            to={item.link}
+            style={{ textDecoration: "none", color: "white" }}
+            onMouseEnter={() => {
+              setHoverIndex(index)
+              console.log('hover', index)
+            }}
+            onMouseOut={() => setHoverIndex(-1)}
+          >
+            <div id="menuTitleContainer">
+              {index === hoverIndex ? (
+                <animated.div
+                  id={`filter${index}`}
+                  style={`title${index}Animate`}
+                >
+                  <div
+                    style={{
+                      width: "100%",
+                      background: item.lineColor,
+                      height: "4vh",
+                    }}
+                  />
+                </animated.div>
+              ) : (
+                <div
+                  id={`filter${index}`}
+                  style={{
+                    background: item.lineColor,
+                  }}
+                />
+              )}
+              <span id="menuTitle">{item.title}</span>
             </div>
           </Link>
         ))}
