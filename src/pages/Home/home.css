@@ -71,7 +71,6 @@
   display: flex;
   flex-direction: column;
   height: 50vh;
-  /* justify-content: space-between; */
 }
 
 .gameWrap {
@@ -98,17 +97,42 @@
   left: 0;
 }
 
+@keyframes blink {
+  0%,
+  8% {
+    height: 8%;
+  }
+  10%,
+  12% {
+    height: 1%;
+  }
+  14%,
+  100% {
+    height: 8%;
+  }
+}
+
 .mat1 {
-  width: 25%;
-  height: 25%;
-  margin-right: 2vw;
-  margin-bottom: 5vh;
+  position: absolute;
+  top: 46%;
+  right: 60vw;
+  width: 8%;
+  height: 8%;
+  animation-name: blink;
+  animation-duration: 4s;
+  animation-delay: 15s;
+  animation-iteration-count: infinite;
 }
 .mat2 {
-  width: 25%;
-  height: 25%;
-  margin-left: 2vw;
-  margin-top: 3vh;
+  position: absolute;
+  top: 46%;
+  left: 60vw;
+  width: 8%;
+  height: 8%;
+  animation-name: blink;
+  animation-duration: 4s;
+  animation-delay: 15s;
+  animation-iteration-count: infinite;
 }
 
 #filter-campaign {

@@ -49,6 +49,7 @@
   width: 50%;
   position: absolute;
   mix-blend-mode: multiply;
+  background-color: #FF0000;
 }
 
 #filter1 {
@@ -56,6 +57,7 @@
   width: 50%;
   position: absolute;
   mix-blend-mode: multiply;
+  background-color: #00D1FF;
 }
 
 #filter2 {
@@ -63,6 +65,7 @@
   width: 50%;
   position: absolute;
   mix-blend-mode: multiply;
+  background-color: #FAFF00;
 }
 
 #menuTitleContainer {
@@ -72,28 +75,3 @@
   align-items: center;
   margin: 6vh;
 }
-
-/* .filter-campaign {
-  position: absolute;
-  width: 886px;
-  height: 25px;
-  left: calc(50% - 886px / 2);
-  top: 86px;
-  mix-blend-mode: multiply;
-}
-.filter-project {
-  position: absolute;
-  width: 886px;
-  height: 25px;
-  left: calc(50% - 886px / 2);
-  top: 85px;
-  mix-blend-mode: multiply;
-}
-.filter-contact-us {
-  position: absolute;
-  width: 886px;
-  height: 25px;
-  left: calc(50% - 886px / 2);
-  top: 86px;
-  mix-blend-mode: multiply;
-}  */

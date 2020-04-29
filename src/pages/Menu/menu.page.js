@@ -22,11 +22,34 @@ const menuData = [
   },
 ];
 
+function MenuButton(props) {
+  const { item, isHover, index } = props;
+  const filterAnimate = useSpring({
+    height: isHover ? "16vh" : "4vh",
+  });
+  const titleAnimate = useSpring({
+    fontSize: isHover ? "10vmax" : "6vmax",
+    lineHeight: isHover ? "16vh" : "8vh",
+  });
+  return (
+    <Link
+      to={item.link}
+      style={{ textDecoration: "none", color: item.lineColor, height: "auto" }}
+      onMouseEnter={() => props.setHover(index)}
+      onMouseOut={() => props.setHover(-1)}
+    >
+      <div id="menuTitleContainer">
+        <animated.div id={`filter${index}`} style={filterAnimate} />
+        <animated.span style={titleAnimate} id="menuTitle">
+          {item.title}
+        </animated.span>
+      </div>
+    </Link>
+  );
+}
+
 function Menu(props) {
   const [hoverIndex, setHoverIndex] = useState(-1);
-  const titleAnimate = useSpring({
-    height: hoverIndex > 0 ? "8vh" : "4vh",
-  });
   return (
     <div id="pageBg">
       <FixedButton type={2} />
@@ -44,65 +67,13 @@ function Menu(props) {
       </div>
       <div id="menuContainer">
         {menuData.map((item, index) => (
-          <Link
-            to={item.link}
-            style={{ textDecoration: "none", color: "white" }}
-            onMouseEnter={() => {
-              setHoverIndex(index)
-              console.log('hover', index)
-            }}
-            onMouseOut={() => setHoverIndex(-1)}
-          >
-            <div id="menuTitleContainer">
-              {index === hoverIndex ? (
-                <animated.div
-                  id={`filter${index}`}
-                  style={`title${index}Animate`}
-                >
-                  <div
-                    style={{
-                      width: "100%",
-                      background: item.lineColor,
-                      height: "4vh",
-                    }}
-                  />
-                </animated.div>
-              ) : (
-                <div
-                  id={`filter${index}`}
-                  style={{
-                    background: item.lineColor,
-                  }}
-                />
-              )}
-              <span id="menuTitle">{item.title}</span>
-            </div>
-          </Link>
+          <MenuButton
+            item={item}
+            index={index}
+            isHover={index === hoverIndex}
+            setHover={(index) => setHoverIndex(index)}
+          />
         ))}
-        {/* <div class="campaign">
-          <h1 class="text">CAMPAIGN</h1>
-          <img
-            class="filter-campaign"
-            src={require("../../assets/icon/menu-filter-campaign.png")}
-            alt="filter-campaign"
-          />
-        </div>
-        <div class="project">
-          <h1 class="text">PROJECT</h1>
-          <img
-            class="filter-project"
-            src={require("../../assets/icon/menu-filter-project.png")}
-            alt="filter-project"
-          />
-        </div>
-        <div class="contact-us">
-          <h1 class="text">CONTACT US</h1>
-          <img
-            class="filter-contact-us"
-            src={require("../../assets/icon/menu-filter-contact-us.png")}
-            alt="filter-contact-us"
-          />
-        </div> */}
       </div>
       <div className="pineContainer">
         <img
