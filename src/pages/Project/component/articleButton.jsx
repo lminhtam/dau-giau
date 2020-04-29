@@ -1,9 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../project.css";
+import { animated } from "react-spring";
 
 const FLEX_DIRECTION = ["column-reverse", "row", "column", "row-reverse"];
 const CONTENT_FLEX = ["row", "column", "row-reverse", "column-reverse"];
+const getPosition = (index) => {
+  switch (index) {
+    case 0:
+      return { left: "50vw", bottom: "50vh" };
+    case 1:
+      return { left: "50vw", top: "50vh" };
+    case 2:
+      return { right: "50vw", top: "50vh" };
+    case 3:
+      return { right: "50vw", bottom: "50vh" };
+    default:
+      return {};
+  }
+};
 export default class ArticleButton extends React.Component {
   render() {
     const { item, isHover, index } = this.props;
@@ -17,6 +32,20 @@ export default class ArticleButton extends React.Component {
           height: "50vh",
         }}
       >
+        <Link to={item.link} className="link">
+          <animated.div>
+            <div
+              style={{
+                width: index === 1 || index === 3 ? "13vh" : "20vw",
+                height: index === 1 || index === 3 ? "20vw" : "13vh",
+                position: "absolute",
+                ...getPosition(index),
+                mixBlendMode: "multiply",
+                backgroundColor: item.filterColor,
+              }}
+            />
+          </animated.div>
+        </Link>
         <Link
           to={item.link}
           className="link"
