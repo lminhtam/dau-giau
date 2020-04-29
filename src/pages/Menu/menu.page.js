@@ -34,13 +34,21 @@ function MenuButton(props) {
   return (
     <Link
       to={item.link}
-      style={{ textDecoration: "none", color: item.lineColor, height: "auto" }}
+      style={{ textDecoration: "none", color: item.lineColor }}
       onMouseEnter={() => props.setHover(index)}
       onMouseOut={() => props.setHover(-1)}
     >
-      <div id="menuTitleContainer">
-        <animated.div id={`filter${index}`} style={filterAnimate} />
-        <animated.span style={titleAnimate} id="menuTitle">
+      <div id="menuTitleContainer" onMouseEnter={() => props.setHover(index)}>
+        <animated.div
+          id={`filter${index}`}
+          style={filterAnimate}
+          onMouseEnter={() => props.setHover(index)}
+        />
+        <animated.span
+          style={titleAnimate}
+          id="menuTitle"
+          onMouseEnter={() => props.setHover(index)}
+        >
           {item.title}
         </animated.span>
       </div>
