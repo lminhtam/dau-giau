@@ -39,6 +39,7 @@ export default function ArticleButton(props) {
       bottom: isHover ? "55vh" : "50vh",
     }),
   };
+  console.log(filter[`article${index}`]);
   return (
     <div
       style={{
@@ -49,7 +50,12 @@ export default function ArticleButton(props) {
         height: "50vh",
       }}
     >
-      <Link to={item.link} className="link">
+      <Link
+        to={item.link}
+        className="link"
+        onMouseEnter={() => props.onHover()}
+        onMouseOut={() => props.onOut()}
+      >
         <animated.div style={filter[`article${index}`]}>
           <div
             style={{
@@ -66,8 +72,8 @@ export default function ArticleButton(props) {
       <Link
         to={item.link}
         className="link"
-        onMouseEnter={props.onHover}
-        onMouseOut={props.onOut}
+        onMouseEnter={() => props.onHover()}
+        onMouseOut={() => props.onOut()}
         style={{
           width: index === 1 || index === 3 ? "13vh" : "20vw",
           height: index === 1 || index === 3 ? "20vw" : "13vh",

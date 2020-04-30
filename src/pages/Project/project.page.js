@@ -9,28 +9,28 @@ const data = [
     img: "film.png",
     link: "/short-film",
     items: [],
-    filterColor: '#00FF19'
+    filterColor: "#00FF19",
   },
   {
     title: "manip-title.png",
     img: "manipulation.png",
     link: "/manipulation",
     items: [],
-    filterColor: '#0085FF'
+    filterColor: "#0085FF",
   },
   {
     title: "photoshot-title.png",
     img: "photoshot.png",
     link: "/photoshot",
     items: [],
-    filterColor: '#FF00D6'
+    filterColor: "#FF00D6",
   },
   {
     title: "clips-title.png",
     img: "clips.png",
     link: "/clips",
     items: [{ title: "POST MOST" }, { title: "ACCIDENTS BY TRASH" }],
-    filterColor: '#FF0000'
+    filterColor: "#FF0000",
   },
 ];
 
