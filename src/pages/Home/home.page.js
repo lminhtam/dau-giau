@@ -17,6 +17,9 @@ function Home(props) {
     marginLeft: !hoverLogo ? "-13vw" : "0vw",
     opacity: hoverLogo ? 1 : 0,
   });
+  const fixMove = useSpring({
+    opacity: hoverLogo ? 1 : 0,
+  });
   const campaignAnimate = useSpring({
     bottom: hoverCampaign ? "18vh" : "25vh",
     right: hoverCampaign ? "65vw" : "56.5vw",
@@ -42,16 +45,19 @@ function Home(props) {
           >
             CAMPAIGN
           </Link>
-          <Link to="/campaign">
+          
+        </animated.div>
+      </div>
+	  <animated.div style={hoverLogo ? {} : fixMove}>
+		<Link to="/campaign">
             <animated.div
               id="filter-campaign"
               onMouseEnter={() => setHoverCampaign(true)}
               onMouseOut={() => setHoverCampaign(false)}
               style={campaignAnimate}
             />
-          </Link>
-        </animated.div>
-      </div>
+		</Link>
+	  </animated.div>	 
       <div
         style={{ height: "50vh", width: "13vw" }}
         onMouseEnter={logoClick ? () => {} : () => setHoverLogo(true)}
@@ -88,14 +94,6 @@ function Home(props) {
           >
             PROJECT
           </Link>
-          <Link to="/project">
-            <animated.div
-              id="filter-project"
-              onMouseEnter={() => setHoverProject(true)}
-              onMouseOut={() => setHoverCampaign(false)}
-              style={projectAnimate}
-            />
-          </Link>
         </animated.div>
         <img
           className="mat2"
@@ -103,6 +101,17 @@ function Home(props) {
           alt="mat"
         />
       </div>
+	  <animated.div style={hoverLogo ? {} : fixMove}>
+		<Link to="/project">
+            <animated.div
+              id="filter-project"
+              onMouseEnter={() => setHoverProject(true)}
+              onMouseOut={() => setHoverProject(false)}
+              style={projectAnimate}
+            />
+		</Link>
+	  </animated.div>
+	  
     </div>
   );
 }
