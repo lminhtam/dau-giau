@@ -50,13 +50,13 @@ export default function ArticleButton(props) {
         height: "50vh",
       }}
     >
-      <Link
-        to={item.link}
-        className="link"
-        onMouseEnter={() => props.onHover()}
-        onMouseOut={() => props.onOut()}
-      >
-        <animated.div style={filter[`article${index}`]}>
+      <animated.div style={filter[`article${index}`]}>
+        <Link
+          to={item.link}
+          className="link"
+          onMouseEnter={() => props.onHover()}
+          onMouseOut={() => props.onOut()}
+        >
           <div
             style={{
               width: index === 1 || index === 3 ? "13vh" : "20vw",
@@ -67,8 +67,8 @@ export default function ArticleButton(props) {
               backgroundColor: item.filterColor,
             }}
           />
-        </animated.div>
-      </Link>
+        </Link>
+      </animated.div>
       <Link
         to={item.link}
         className="link"
