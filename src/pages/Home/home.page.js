@@ -17,6 +17,9 @@ function Home(props) {
     marginLeft: !hoverLogo ? "-13vw" : "0vw",
     opacity: hoverLogo ? 1 : 0,
   });
+  const fixMove = useSpring({
+    opacity: hoverLogo ? 1 : 0,
+  });
   const campaignAnimate = useSpring({
     bottom: hoverCampaign ? "18vh" : "25vh",
     right: hoverCampaign ? "65vw" : "56.5vw",
@@ -42,6 +45,8 @@ function Home(props) {
           >
             CAMPAIGN
           </Link>
+        </animated.div>
+        <animated.div style={hoverLogo ? {} : fixMove}>
           <Link to="/campaign">
             <animated.div
               id="filter-campaign"
@@ -88,6 +93,8 @@ function Home(props) {
           >
             PROJECT
           </Link>
+        </animated.div>
+        <animated.div style={hoverLogo ? {} : fixMove}>
           <Link to="/project">
             <animated.div
               id="filter-project"
