@@ -23,10 +23,12 @@ function Home(props) {
   const campaignAnimate = useSpring({
     bottom: hoverCampaign ? "18vh" : "25vh",
     right: hoverCampaign ? "65vw" : "56.5vw",
+	marginRight: !hoverLogo ? "-13vw" : "0vw",
   });
   const projectAnimate = useSpring({
     top: hoverProject ? "18vh" : "25vh",
     left: hoverProject ? "65vw" : "56.5vw",
+	marginLeft: !hoverLogo ? "-13vw" : "0vw",
   });
   return (
     <div className="background">
@@ -48,7 +50,7 @@ function Home(props) {
           
         </animated.div>
       </div>
-	  <animated.div style={hoverLogo ? {} : fixMove}>
+	  <animated.div style={(hoverLogo ? {} : fixMove)}>
 		<Link to="/campaign">
             <animated.div
               id="filter-campaign"
