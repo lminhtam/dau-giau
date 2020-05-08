@@ -1,3 +1,11 @@
+#pageBg {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
 .link {
   text-decoration: none;
   color: white;
@@ -59,4 +67,41 @@
   padding-bottom: 2vh;
   letter-spacing: 0.05em;
   color: white;
+}
+
+#filterPrj0 {
+  width: 20vw;
+  height: 13vh;
+  position: absolute;
+  left: 50vw;
+  bottom: 50vh;
+  mix-blend-mode: multiply;
+  background-color: #00ff19;
+}
+#filterPrj1 {
+  width: 13vh;
+  height: 20vw;
+  position: absolute;
+  left: 50vw;
+  top: 50vh;
+  mix-blend-mode: multiply;
+  background-color: #0085FF;
+}
+#filterPrj2 {
+  width: 20vw;
+  height: 13vh;
+  position: absolute;
+  right: 50vw;
+  top: 50vh;
+  mix-blend-mode: multiply;
+  background-color: #FF00D6;
+}
+#filterPrj3 {
+  width: 13vh;
+  height: 20vw;
+  position: absolute;
+  right: 50vw;
+  bottom: 50vh;
+  mix-blend-mode: multiply;
+  background-color: #FF0000;
 }

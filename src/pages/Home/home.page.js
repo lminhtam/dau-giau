@@ -47,11 +47,9 @@ function Home(props) {
           >
             CAMPAIGN
           </Link>
-          
         </animated.div>
-      </div>
-	  <animated.div style={(hoverLogo ? {} : fixMove)}>
-		<Link to="/campaign">
+        <animated.div style={hoverLogo ? {} : fixMove}>
+          <Link to="/campaign">
             <animated.div
               id="filter-campaign"
               onMouseEnter={() => setHoverCampaign(true)}
@@ -95,6 +93,16 @@ function Home(props) {
             onMouseOut={() => setHoverProject(false)}
           >
             PROJECT
+          </Link>
+        </animated.div>
+        <animated.div style={hoverLogo ? {} : fixMove}>
+          <Link to="/project">
+            <animated.div
+              id="filter-project"
+              onMouseEnter={() => setHoverProject(true)}
+              onMouseOut={() => setHoverCampaign(false)}
+              style={projectAnimate}
+            />
           </Link>
         </animated.div>
         <img

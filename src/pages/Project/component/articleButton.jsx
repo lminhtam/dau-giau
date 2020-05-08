@@ -5,20 +5,7 @@ import { animated, useSpring } from "react-spring";
 
 const FLEX_DIRECTION = ["column-reverse", "row", "column", "row-reverse"];
 const CONTENT_FLEX = ["row", "column", "row-reverse", "column-reverse"];
-const getPosition = (index) => {
-  switch (index) {
-    case 0:
-      return { left: "50vw", bottom: "50vh" };
-    case 1:
-      return { left: "50vw", top: "50vh" };
-    case 2:
-      return { right: "50vw", top: "50vh" };
-    case 3:
-      return { right: "50vw", bottom: "50vh" };
-    default:
-      return {};
-  }
-};
+
 export default function ArticleButton(props) {
   const { item, isHover, index } = props;
   const filter = {
@@ -39,7 +26,6 @@ export default function ArticleButton(props) {
       bottom: isHover ? "55vh" : "50vh",
     }),
   };
-  console.log(filter[`article${index}`]);
   return (
     <div
       style={{
@@ -50,25 +36,15 @@ export default function ArticleButton(props) {
         height: "50vh",
       }}
     >
-      <Link
-        to={item.link}
-        className="link"
-        onMouseEnter={() => props.onHover()}
-        onMouseOut={() => props.onOut()}
-      >
-        <animated.div style={filter[`article${index}`]}>
-          <div
-            style={{
-              width: index === 1 || index === 3 ? "13vh" : "20vw",
-              height: index === 1 || index === 3 ? "20vw" : "13vh",
-              position: "absolute",
-              ...getPosition(index),
-              mixBlendMode: "multiply",
-              backgroundColor: item.filterColor,
-            }}
-          />
-        </animated.div>
-      </Link>
+      <animated.div style={filter[`article${index}`]}>
+        <Link
+          to={item.link}
+          className="link"
+          onMouseEnter={() => props.onHover()}
+          onMouseOut={() => props.onOut()}
+          id={`filterPrj${index}`}
+        />
+      </animated.div>
       <Link
         to={item.link}
         className="link"

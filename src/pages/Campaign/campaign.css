@@ -1,0 +1,48 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 80vh;
+  line-height: 80vh;
+  background: white;
+  overflow: hidden;
+}
+
+#pageBg {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#carouselContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#imgStyle {
+  width: 80vw;
+  height: 80vh;
+  mix-blend-mode: luminosity;
+}
+
+#title {
+  color: black;
+  font-size: 4vw;
+  width: 30vw;
+  text-align: left;
+  position: absolute;
+  top: 30vh;
+  left: 20vw;
+}
+
+#filterPic {
+  position: absolute;
+  top: 25vh;
+  left: 15vw;
+  width: 10%;
+  height: 50vh;
+  mix-blend-mode: multiply;
+  background-color: #001AFF;
+}
