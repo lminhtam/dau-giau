@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dau-giau/static/css/main.7b0ea4ff.chunk.css",
-    "main.js": "/dau-giau/static/js/main.2d41cc4b.chunk.js",
-    "main.js.map": "/dau-giau/static/js/main.2d41cc4b.chunk.js.map",
+    "main.js": "/dau-giau/static/js/main.e42ae4a3.chunk.js",
+    "main.js.map": "/dau-giau/static/js/main.e42ae4a3.chunk.js.map",
     "runtime-main.js": "/dau-giau/static/js/runtime-main.1ee8062f.js",
     "runtime-main.js.map": "/dau-giau/static/js/runtime-main.1ee8062f.js.map",
     "static/css/2.9d9314c1.chunk.css": "/dau-giau/static/css/2.9d9314c1.chunk.css",
     "static/js/2.f6f9a247.chunk.js": "/dau-giau/static/js/2.f6f9a247.chunk.js",
     "static/js/2.f6f9a247.chunk.js.map": "/dau-giau/static/js/2.f6f9a247.chunk.js.map",
     "index.html": "/dau-giau/index.html",
-    "precache-manifest.c03a0411b1c004c13bc9ca6ea2d559ae.js": "/dau-giau/precache-manifest.c03a0411b1c004c13bc9ca6ea2d559ae.js",
+    "precache-manifest.f90f048da7eb51d57f6580faa85d5fd1.js": "/dau-giau/precache-manifest.f90f048da7eb51d57f6580faa85d5fd1.js",
     "service-worker.js": "/dau-giau/service-worker.js",
     "static/css/2.9d9314c1.chunk.css.map": "/dau-giau/static/css/2.9d9314c1.chunk.css.map",
     "static/css/main.7b0ea4ff.chunk.css.map": "/dau-giau/static/css/main.7b0ea4ff.chunk.css.map",
@@ -27,6 +27,6 @@
     "static/css/2.9d9314c1.chunk.css",
     "static/js/2.f6f9a247.chunk.js",
     "static/css/main.7b0ea4ff.chunk.css",
-    "static/js/main.2d41cc4b.chunk.js"
+    "static/js/main.e42ae4a3.chunk.js"
   ]
 }
