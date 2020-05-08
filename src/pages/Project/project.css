@@ -105,3 +105,7 @@
   mix-blend-mode: multiply;
   background-color: #FF0000;
 }
+
+#iconStyle {
+  width: 5vw;
+}
