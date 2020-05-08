@@ -1,7 +1,7 @@
-import React from "react";
-import "./fixedBtn.css";
 import "font-awesome/css/font-awesome.min.css";
+import React from "react";
 import { Link } from "react-router-dom";
+import "./fixedBtn.css";
 
 export default class FixedButton extends React.Component {
   static defaultProps = {
@@ -37,14 +37,18 @@ export default class FixedButton extends React.Component {
               />
             </Link>
             {this.props.type !== 3 && (
-              <Link to="/game" id="gameWrap">
-                <div id="rectangle" />
+              <div>
                 <img
                   id="play"
                   src={require("../../assets/icon/Group.png")}
                   alt="game"
                 />
-              </Link>
+                <Link
+                  to="/game"
+                  style={{ textDecoration: "none" }}
+                  id="rectangle"
+                />
+              </div>
             )}
           </div>
         )}
@@ -54,7 +58,16 @@ export default class FixedButton extends React.Component {
             style={{ textDecoration: "none", color: "#FF0000" }}
           >
             <div id="triangleLeft" />
-            <h3 className="leftBot">CAMPAIGN</h3>
+            <span
+              className="leftBot"
+              style={{
+                color: this.props.from === "campaign" ? "white" : "black",
+                WebkitTextStroke:
+                  this.props.from === "campaign" ? "0px white" : "1px white",
+              }}
+            >
+              CAMPAIGN
+            </span>
           </Link>
         )}
         {this.props.type === 1 && (
@@ -63,7 +76,16 @@ export default class FixedButton extends React.Component {
             style={{ textDecoration: "none", color: "#FFF500" }}
           >
             <div id="triangleRight" />
-            <h3 className="rightBot">PROJECT</h3>
+            <span
+              className="rightBot"
+              style={{
+                color: this.props.from === "project" ? "white" : "black",
+                WebkitTextStroke:
+                  this.props.from === "project" ? "0px white" : "1px white",
+              }}
+            >
+              PROJECT
+            </span>
           </Link>
         )}
       </div>

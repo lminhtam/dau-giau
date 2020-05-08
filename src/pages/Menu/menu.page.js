@@ -1,27 +1,63 @@
-import React from "react";
-import "./menu.css";
-import FixedButton from "../../shared/fixedButton/fixedBtn";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { animated, useSpring } from "react-spring";
+import FixedButton from "../../shared/fixedButton/fixedBtn";
+import "./menu.css";
 
 const menuData = [
   {
-    title: 'CAMPAIGN',
-    link: '/campaign',
-    lineColor: '#FF0000',
+    title: "CAMPAIGN",
+    link: "/campaign",
+    lineColor: "#FF0000",
   },
   {
-    title: 'PROJECT',
-    link: '/project',
-    lineColor: '#00D1FF',
+    title: "PROJECT",
+    link: "/project",
+    lineColor: "#00D1FF",
   },
   {
-    title: 'CONTACT US',
-    link: '/contact',
-    lineColor: '#FAFF00',
+    title: "CONTACT US",
+    link: "/contact",
+    lineColor: "#FAFF00",
   },
-]
+];
+
+function MenuButton(props) {
+  const { item, isHover, index } = props;
+  const filterAnimate = useSpring({
+    height: isHover ? "16vh" : "4vh",
+  });
+  const titleAnimate = useSpring({
+    fontSize: isHover ? "10vmax" : "6vmax",
+    lineHeight: isHover ? "16vh" : "8vh",
+  });
+  return (
+    <Link
+      to={item.link}
+      style={{ textDecoration: "none", color: item.lineColor }}
+      onMouseEnter={() => props.setHover(index)}
+      onMouseOut={() => props.setHover(-1)}
+    >
+      <div id="menuTitleContainer" onMouseEnter={() => props.setHover(index)}>
+        <animated.div
+          id={`filter${index}`}
+          style={filterAnimate}
+          onMouseEnter={() => props.setHover(index)}
+        />
+        <animated.span
+          style={titleAnimate}
+          id="menuTitle"
+          onMouseEnter={() => props.setHover(index)}
+        >
+          {item.title}
+        </animated.span>
+      </div>
+    </Link>
+  );
+}
 
 function Menu(props) {
+  const [hoverIndex, setHoverIndex] = useState(-1);
   return (
     <div id="pageBg">
       <FixedButton type={2} />
@@ -38,37 +74,14 @@ function Menu(props) {
         />
       </div>
       <div id="menuContainer">
-        {menuData.map(item => (
-          <Link to={item.link} style={{textDecoration: 'none', color: 'white'}}>
-            <div>
-              <h1 id='menuTitle'>{item.title}</h1>
-            </div>
-          </Link>
+        {menuData.map((item, index) => (
+          <MenuButton
+            item={item}
+            index={index}
+            isHover={index === hoverIndex}
+            setHover={(index) => setHoverIndex(index)}
+          />
         ))}
-        {/* <div class="campaign">
-          <h1 class="text">CAMPAIGN</h1>
-          <img
-            class="filter-campaign"
-            src={require("../../assets/icon/menu-filter-campaign.png")}
-            alt="filter-campaign"
-          />
-        </div>
-        <div class="project">
-          <h1 class="text">PROJECT</h1>
-          <img
-            class="filter-project"
-            src={require("../../assets/icon/menu-filter-project.png")}
-            alt="filter-project"
-          />
-        </div>
-        <div class="contact-us">
-          <h1 class="text">CONTACT US</h1>
-          <img
-            class="filter-contact-us"
-            src={require("../../assets/icon/menu-filter-contact-us.png")}
-            alt="filter-contact-us"
-          />
-        </div> */}
       </div>
       <div className="pineContainer">
         <img

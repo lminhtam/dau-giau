@@ -44,28 +44,34 @@
   color: #ffffff;
 }
 
-/* .filter-campaign {
+#filter0 {
+  height: 4vh;
+  width: 50%;
   position: absolute;
-  width: 886px;
-  height: 25px;
-  left: calc(50% - 886px / 2);
-  top: 86px;
   mix-blend-mode: multiply;
+  background-color: #FF0000;
 }
-.filter-project {
-  position: absolute;
-  width: 886px;
-  height: 25px;
-  left: calc(50% - 886px / 2);
-  top: 85px;
-  mix-blend-mode: multiply;
-}
-.filter-contact-us {
-  position: absolute;
-  width: 886px;
-  height: 25px;
-  left: calc(50% - 886px / 2);
-  top: 86px;
-  mix-blend-mode: multiply;
-}  */
 
+#filter1 {
+  height: 4vh;
+  width: 50%;
+  position: absolute;
+  mix-blend-mode: multiply;
+  background-color: #00D1FF;
+}
+
+#filter2 {
+  height: 4vh;
+  width: 50%;
+  position: absolute;
+  mix-blend-mode: multiply;
+  background-color: #FAFF00;
+}
+
+#menuTitleContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 6vh;
+}
