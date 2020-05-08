@@ -1,8 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../project.css";
+import React, { useState } from "react";
 import { animated, useSpring } from "react-spring";
-import { useState } from "react";
+import "../project.css";
 
 const FLEX_DIRECTION = ["column-reverse", "row", "column", "row-reverse"];
 const CONTENT_FLEX = ["row", "column", "row-reverse", "column-reverse"];
@@ -15,20 +13,20 @@ export default function ArticleButton(props) {
   });
   const filter = {
     article0: useSpring({
-      left: isHover ? "53vw" : "50vw",
-      bottom: isHover ? "55vh" : "50vh",
+      left: isHover ? "52vw" : "50vw",
+      bottom: isHover ? "53vh" : "50vh",
     }),
     article1: useSpring({
-      left: isHover ? "53vw" : "50vw",
-      top: isHover ? "55vh" : "50vh",
+      left: isHover ? "52vw" : "50vw",
+      top: isHover ? "53vh" : "50vh",
     }),
     article2: useSpring({
-      right: isHover ? "53vw" : "50vw",
-      top: isHover ? "55vh" : "50vh",
+      right: isHover ? "52vw" : "50vw",
+      top: isHover ? "53vh" : "50vh",
     }),
     article3: useSpring({
-      right: isHover ? "53vw" : "50vw",
-      bottom: isHover ? "55vh" : "50vh",
+      right: isHover ? "52vw" : "50vw",
+      bottom: isHover ? "53vh" : "50vh",
     }),
   };
   const title = {
@@ -55,36 +53,24 @@ export default function ArticleButton(props) {
         height: "50vh",
       }}
     >
-      <Link
-        className="link"
+      <animated.div
+        style={filter[`article${index}`]}
+        id={`filterPrj${index}`}
         onMouseEnter={buttonClick ? () => {} : () => props.onHover()}
         onMouseOut={buttonClick ? () => {} : () => props.onOut()}
         onClick={() => setButtonClick(!buttonClick)}
-      >
-        <animated.div
-          style={buttonClick ? {} : filter[`article${index}`]}
-          id={`filterPrj${index}`}
-        />
-      </Link>
-      <Link
-        className="link"
-        onMouseEnter={buttonClick ? () => {} : () => props.onHover()}
-        onMouseOut={buttonClick ? () => {} : () => props.onOut()}
-        onClick={() => setButtonClick(!buttonClick)}
+      />
+      <img
+        src={require(`../../../assets/icon/${item.title}`)}
+        alt={item.title}
         style={{
           width: index === 1 || index === 3 ? "13vh" : "20vw",
           height: index === 1 || index === 3 ? "20vw" : "13vh",
         }}
-      >
-        <img
-          src={require(`../../../assets/icon/${item.title}`)}
-          alt={item.title}
-          style={{
-            width: index === 1 || index === 3 ? "13vh" : "20vw",
-            height: index === 1 || index === 3 ? "20vw" : "13vh",
-          }}
-        />
-      </Link>
+        onMouseEnter={buttonClick ? () => {} : () => props.onHover()}
+        onMouseOut={buttonClick ? () => {} : () => props.onOut()}
+        onClick={() => setButtonClick(!buttonClick)}
+      />
       {(isHover || buttonClick) && (
         <div
           style={{

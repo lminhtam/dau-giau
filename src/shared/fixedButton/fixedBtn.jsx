@@ -37,14 +37,18 @@ export default class FixedButton extends React.Component {
               />
             </Link>
             {this.props.type !== 3 && (
-              <Link to="/game" id="gameWrap">
-                <div id="rectangle" />
+              <div>
                 <img
                   id="play"
                   src={require("../../assets/icon/Group.png")}
                   alt="game"
                 />
-              </Link>
+                <Link
+                  to="/game"
+                  style={{ textDecoration: "none" }}
+                  id="rectangle"
+                />
+              </div>
             )}
           </div>
         )}
@@ -54,7 +58,7 @@ export default class FixedButton extends React.Component {
             style={{ textDecoration: "none", color: "#FF0000" }}
           >
             <div id="triangleLeft" />
-            <h3
+            <span
               className="leftBot"
               style={{
                 color: this.props.from === "campaign" ? "white" : "black",
@@ -63,7 +67,7 @@ export default class FixedButton extends React.Component {
               }}
             >
               CAMPAIGN
-            </h3>
+            </span>
           </Link>
         )}
         {this.props.type === 1 && (
@@ -72,7 +76,7 @@ export default class FixedButton extends React.Component {
             style={{ textDecoration: "none", color: "#FFF500" }}
           >
             <div id="triangleRight" />
-            <h3
+            <span
               className="rightBot"
               style={{
                 color: this.props.from === "project" ? "white" : "black",
@@ -81,7 +85,7 @@ export default class FixedButton extends React.Component {
               }}
             >
               PROJECT
-            </h3>
+            </span>
           </Link>
         )}
       </div>

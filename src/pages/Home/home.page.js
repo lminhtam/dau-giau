@@ -36,26 +36,30 @@ function Home(props) {
           src={require("../../assets/icon/mat.svg")}
           alt="mat"
         />
-        <animated.div style={logoClick ? {} : leftMove}>
-          <Link
-            to="/campaign"
-            className="linkLeft"
-            onMouseEnter={() => setHoverCampaign(true)}
-            onMouseOut={() => setHoverCampaign(false)}
-          >
-            CAMPAIGN
-          </Link>
-        </animated.div>
-        <animated.div style={hoverLogo ? {} : fixMove}>
-          <Link to="/campaign">
-            <animated.div
-              id="filter-campaign"
+        {(hoverLogo || logoClick || hoverCampaign) && (
+          <animated.div style={logoClick ? {} : leftMove}>
+            <Link
+              to="/campaign"
+              className="linkLeft"
               onMouseEnter={() => setHoverCampaign(true)}
               onMouseOut={() => setHoverCampaign(false)}
-              style={campaignAnimate}
-            />
-          </Link>
-        </animated.div>
+            >
+              CAMPAIGN
+            </Link>
+          </animated.div>
+        )}
+        {(hoverLogo || logoClick || hoverCampaign) && (
+          <animated.div style={hoverLogo ? {} : fixMove}>
+            <Link to="/campaign">
+              <animated.div
+                id="filter-campaign"
+                onMouseEnter={() => setHoverCampaign(true)}
+                onMouseOut={() => setHoverCampaign(false)}
+                style={campaignAnimate}
+              />
+            </Link>
+          </animated.div>
+        )}
       </div>
       <div
         style={{ height: "50vh", width: "13vw" }}
@@ -84,26 +88,30 @@ function Home(props) {
         </Link>
       </div>
       <div className="wrapRight">
-        <animated.div style={logoClick ? {} : rightMove}>
-          <Link
-            to="/project"
-            className="linkRight"
-            onMouseEnter={() => setHoverProject(true)}
-            onMouseOut={() => setHoverProject(false)}
-          >
-            PROJECT
-          </Link>
-        </animated.div>
-        <animated.div style={hoverLogo ? {} : fixMove}>
-          <Link to="/project">
-            <animated.div
-              id="filter-project"
+        {(hoverLogo || logoClick || hoverProject) && (
+          <animated.div style={logoClick ? {} : rightMove}>
+            <Link
+              to="/project"
+              className="linkRight"
               onMouseEnter={() => setHoverProject(true)}
-              onMouseOut={() => setHoverCampaign(false)}
-              style={projectAnimate}
-            />
-          </Link>
-        </animated.div>
+              onMouseOut={() => setHoverProject(false)}
+            >
+              PROJECT
+            </Link>
+          </animated.div>
+        )}
+        {(hoverLogo || logoClick || hoverProject) && (
+          <animated.div style={hoverLogo ? {} : fixMove}>
+            <Link to="/project">
+              <animated.div
+                id="filter-project"
+                onMouseEnter={() => setHoverProject(true)}
+                onMouseOut={() => setHoverCampaign(false)}
+                style={projectAnimate}
+              />
+            </Link>
+          </animated.div>
+        )}
         <img
           className="mat2"
           src={require("../../assets/icon/mat.svg")}
