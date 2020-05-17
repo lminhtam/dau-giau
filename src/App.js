@@ -7,6 +7,7 @@ import Campaign from "./pages/Campaign/campaign.page";
 import Menu from "./pages/Menu/menu.page";
 import Contact from "./pages/Contact/contact.page";
 import Game from "./pages/Game/game.page";
+import ClipList1 from "./pages/ClipList/cliplist1.page";
 
 function App() {
   return (
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/game">
           <Game />
+        </Route>
+        <Route path="/cliplist">
+          <ClipList1 />
         </Route>
       </div>
     </Router>
