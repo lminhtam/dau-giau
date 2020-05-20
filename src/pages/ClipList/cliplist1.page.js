@@ -164,6 +164,7 @@ function ClipList1(){
             <div className="slide-4">
                 {cardSeries(oneCard, categories, 3, 4, 5)}
             </div>
+            {/* Sau này thêm footer tại đây */}
         </div>
     );
 }
