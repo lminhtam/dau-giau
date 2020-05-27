@@ -8,6 +8,7 @@
 
 #pageBg {
   width: 100%;
+  max-width: 100%;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -19,9 +20,11 @@
   flex: 1;
   justify-content: center;
   align-items: center;
+  padding-top: 10vh;
 }
 
 #imgStyle {
+  align-self: center;
   width: 80vw;
   height: 80vh;
   mix-blend-mode: luminosity;
@@ -44,5 +47,111 @@
   width: 10%;
   height: 50vh;
   mix-blend-mode: multiply;
-  background-color: #001AFF;
+  background-color: #001aff;
+}
+
+#mapBg {
+  width: 100vw;
+  height: 100vh;
+  background-image: #141414;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#leftInfo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2vw;
+  background: #141414;
+  position: absolute;
+  top: 125vh;
+  left: 13vw;
+  z-index: 102;
+  width: 30vw;
+}
+
+#rightInfo {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2vw;
+  background: #141414;
+  position: absolute;
+  top: 160vh;
+  left: 20vw;
+  z-index: 102;
+  width: 30vw;
+}
+
+#yellowSquare {
+  height: 30vw;
+  width: 30vw;
+}
+
+#topicFullBg {
+  width: 100vw;
+  height: 100vh;
+  background-image: #141414;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#topicBg {
+  width: 50vw;
+  height: 90vh;
+  background-image: #141414;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#topicItem {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#titleText {
+  font-size: 2.2vw;
+  text-align: center;
+}
+
+#desText {
+  width: 22vw;
+  font-size: 1.2vw;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+#textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 20vh;
+}
+
+#divDash {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-style: dashed hidden dashed hidden;
+  border-width: 2px;
+  padding-top: 1.5vh;
+  padding-bottom: 1.5vh;
+}
+
+#normalAlign {
+  background-image: #141414;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5vh;
+  max-width: 100%;
 }

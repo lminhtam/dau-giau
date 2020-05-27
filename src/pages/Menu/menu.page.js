@@ -64,13 +64,8 @@ function Menu(props) {
       <div className="pineContainer">
         <img
           className="pines"
-          src={require("../../assets/icon/element-pines.png")}
+          src={require("../../assets/icon/pine.svg")}
           alt="pine"
-        />
-        <img
-          className="pine-circle"
-          src={require("../../assets/icon/element-pines-circle.png")}
-          alt="pine-circle"
         />
       </div>
       <div id="menuContainer">
@@ -86,13 +81,8 @@ function Menu(props) {
       <div className="pineContainer">
         <img
           className="pines"
-          src={require("../../assets/icon/element-pines.png")}
+          src={require("../../assets/icon/pine.svg")}
           alt="pine"
-        />
-        <img
-          className="pine-circle-right"
-          src={require("../../assets/icon/element-pines-circle.png")}
-          alt="pine-circle"
         />
       </div>
     </div>

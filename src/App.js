@@ -13,7 +13,7 @@ import ListVideo from "./pages/Video/listvideo.page";
 function App() {
   return (
     <Router>
-      <div>
+      <div style={{width: '100vw', maxWidth: '100%'}}>
         <Route exact path="/">
           <Home />
         </Route>
