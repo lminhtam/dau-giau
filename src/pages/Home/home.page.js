@@ -31,11 +31,6 @@ function Home(props) {
   return (
     <div className="background">
       <div className="wrapLeft">
-        <img
-          className="mat1"
-          src={require("../../assets/icon/mat.svg")}
-          alt="mat"
-        />
         {(hoverLogo || logoClick || hoverCampaign) && (
           <animated.div style={logoClick ? {} : leftMove}>
             <Link
@@ -44,11 +39,16 @@ function Home(props) {
               onMouseEnter={() => setHoverCampaign(true)}
               onMouseOut={() => setHoverCampaign(false)}
             >
-              CAMPAIGN
+              SẢN PHẨM
             </Link>
           </animated.div>
         )}
-        {(hoverLogo || logoClick || hoverCampaign) && (
+        <img
+          className="mat1"
+          src={require("../../assets/icon/mat.svg")}
+          alt="mat"
+        />
+        {/* {(hoverLogo || logoClick || hoverCampaign) && (
           <animated.div style={hoverLogo ? {} : fixMove}>
             <Link to="/campaign">
               <animated.div
@@ -59,17 +59,17 @@ function Home(props) {
               />
             </Link>
           </animated.div>
-        )}
+        )} */}
       </div>
       <div
-        style={{ height: "50vh", width: "13vw" }}
-        onMouseEnter={logoClick ? () => {} : () => setHoverLogo(true)}
-        onMouseOut={logoClick ? () => {} : () => setHoverLogo(false)}
+        style={{ height: "50vh" }}
+        onMouseEnter={logoClick ? () => { } : () => setHoverLogo(true)}
+        onMouseOut={logoClick ? () => { } : () => setHoverLogo(false)}
         onClick={() => setLogoClick(!logoClick)}
       >
         <img
-          style={{ height: "100%", width: "100%" }}
-          src={require("../../assets/icon/logoBig.png")}
+          style={{ height: "100%" }}
+          src={require("../../assets/icon/logo.svg")}
           alt="logo"
         />
         <Link to="/game">
@@ -88,6 +88,11 @@ function Home(props) {
         </Link>
       </div>
       <div className="wrapRight">
+        <img
+          className="mat2"
+          src={require("../../assets/icon/mat.svg")}
+          alt="mat"
+        />
         {(hoverLogo || logoClick || hoverProject) && (
           <animated.div style={logoClick ? {} : rightMove}>
             <Link
@@ -96,11 +101,11 @@ function Home(props) {
               onMouseEnter={() => setHoverProject(true)}
               onMouseOut={() => setHoverProject(false)}
             >
-              PROJECT
+              VỀ CHÚNG TÔI
             </Link>
           </animated.div>
         )}
-        {(hoverLogo || logoClick || hoverProject) && (
+        {/* {(hoverLogo || logoClick || hoverProject) && (
           <animated.div style={hoverLogo ? {} : fixMove}>
             <Link to="/project">
               <animated.div
@@ -111,12 +116,8 @@ function Home(props) {
               />
             </Link>
           </animated.div>
-        )}
-        <img
-          className="mat2"
-          src={require("../../assets/icon/mat.svg")}
-          alt="mat"
-        />
+        )} */}
+
       </div>
     </div>
   );

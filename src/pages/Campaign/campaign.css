@@ -21,6 +21,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 #imgStyle {
@@ -32,7 +33,7 @@
 
 #title {
   color: black;
-  font-size: 4vw;
+  font-size: 2vw;
   width: 30vw;
   text-align: left;
   position: absolute;
@@ -154,4 +155,36 @@
   align-items: center;
   padding-top: 5vh;
   max-width: 100%;
+}
+
+#house {
+  position: absolute;
+  top: 248vh;
+  left: 13vw;
+  width: 20vw;
+  text-align: center;
+}
+
+#school {
+  position: absolute;
+  top: 248vh;
+  left: 38vw;
+  width: 20vw;
+  text-align: center;
+}
+
+#bus {
+  position: absolute;
+  top: 260vh;
+  left: 70vw;
+  width: 20vw;
+  text-align: center;
+}
+
+#camp {
+  position: absolute;
+  top: 288vh;
+  left: 26vw;
+  width: 20vw;
+  text-align: center;
 }

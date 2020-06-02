@@ -24,8 +24,13 @@ export default class BottomInfo extends React.Component {
       <div id="bottomContainer">
         <div id="bottomDashed">
           <div id="iconContainer">
-            {socialContact.map((item) => (
-              <a style={{ padding: "1vw" }} href={item.link} target="_black">
+            {socialContact.map((item, index) => (
+              <a
+                key={index.toString()}
+                style={{ padding: "1vw" }}
+                href={item.link}
+                target="_black"
+              >
                 <img
                   id="icon"
                   src={require(`../../assets/icon/${item.iconSrc}`)}
@@ -40,7 +45,7 @@ export default class BottomInfo extends React.Component {
             onClick={() => {
               window.scrollTo({
                 top: 0,
-                behavior: "smooth"
+                behavior: "smooth",
               });
             }}
           >

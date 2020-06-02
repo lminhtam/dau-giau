@@ -1,37 +1,53 @@
 import React from "react";
-import "./campaign.css";
 import FixedButton from "../../shared/fixedButton/fixedBtn";
-import Map from "./components/map";
+import "./campaign.css";
 import CampaignInfo from "./components/campaignInfo";
-import Topic from "./components/topic";
-import IntroClip from "./components/introClip";
 import CarouselCampaign from "./components/carouselCampaign";
-import ReactPageScroller from "react-page-scroller";
+import IntroClip from "./components/introClip";
+import Map from "./components/map";
 
 export default class Campaign extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { currentPage: null };
+    this.state = {
+      isBlockScrollUp: false,
+      isBlockScrollDown: false,
+      prevScrollY: 0,
+      index: 0
+    };
   }
-  handlePageChange = (number) => {
-    this.setState({ currentPage: number }); // set currentPage number, to reset it from the previous selected.
-  };
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll, true);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = (e) => {
+    if (e.currentTarget.scrollY >= window.innerHeight * 2) {
+      this.setState({ isBlockScrollDown: true })
+    }
+    if (this.state.isBlockScrollDown) {
+      this.setState({ index: this.state.index + 1 })
+      window.scrollTo({
+        top: window.innerHeight * 2
+      })
+    }
+    if (this.state.index > 4) {
+      this.setState({ isBlockScrollDown: false })
+    }
+  }
 
   render() {
     return (
-      <React.Fragment>
+      <div>
         <FixedButton />
-        <ReactPageScroller
-          pageOnChange={this.handlePageChange}
-          customPageNumber={this.state.currentPage}
-        >
-          <CarouselCampaign />
-          <CampaignInfo />
-          <Map />
-          <Topic />
-          <IntroClip />
-        </ReactPageScroller>
-      </React.Fragment>
+        <CarouselCampaign />
+        <CampaignInfo />
+        <Map index={this.state.index} />
+        <IntroClip />
+      </div>
     );
   }
 }

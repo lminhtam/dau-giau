@@ -15,9 +15,9 @@ export default class FixedButton extends React.Component {
       <div>
         <Link to="/" style={{ textDecoration: "none" }}>
           <img
-            src={require("../../assets/icon/logo.png")}
+            src={require("../../assets/icon/logoSmall.svg")}
             alt="Logo"
-            style={{ width: "3%" }}
+            style={{ width: "5%" }}
             id="logo"
           />
         </Link>
@@ -52,7 +52,7 @@ export default class FixedButton extends React.Component {
         {this.props.type === 1 && (
           <Link
             to={"/campaign"}
-            style={{ textDecoration: "none", zIndex: 3000, position: 'fixed' }}
+            style={{ textDecoration: "none", zIndex: 3000, position: "fixed" }}
           >
             <div id="triangleLeft" />
             <span
@@ -63,14 +63,14 @@ export default class FixedButton extends React.Component {
                   this.props.from === "campaign" ? "0px white" : "1px white",
               }}
             >
-              CAMPAIGN
+              VỀ DỰ ÁN
             </span>
           </Link>
         )}
         {this.props.type === 1 && (
           <Link
             to={"/project"}
-            style={{ textDecoration: "none", zIndex: 3000, position: 'fixed' }}
+            style={{ textDecoration: "none", zIndex: 3000, position: "fixed" }}
           >
             <div id="triangleRight" />
             <span
@@ -81,7 +81,7 @@ export default class FixedButton extends React.Component {
                   this.props.from === "project" ? "0px white" : "1px white",
               }}
             >
-              PROJECT
+              SẢN PHẨM
             </span>
           </Link>
         )}

@@ -4,16 +4,18 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  font-size: 5.5vw;
+  font-size: 2vw;
+  font-weight: 900;
+  color: #1c00e5;
   padding-left: 6vw;
-  padding-right: 3vw;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
-  border: 1vmin solid #ffffff;
-  width: 20vw;
-  height: 12vh;
+  padding-right: 2vw;
+  padding-top: 0.3vh;
+  padding-bottom: 0.3vh;
+  width: 15vw;
+  height: 9vh;
   letter-spacing: 0.05em;
   text-align: right;
+  background-color: #e5e500;
 }
 
 .linkRight {
@@ -22,31 +24,16 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 5.5vw;
-  padding-left: 3vw;
-  padding-right: 6vw;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
-  border: 1vmin solid #ffffff;
+  font-size: 2vw;
+  font-weight: 900;
+  padding-left: 2vw;
+  padding-top: 0.3vh;
+  padding-bottom: 0.3vh;
+  border-bottom: 1.2vmin solid #e5e500;
   width: 20vw;
   letter-spacing: 0.05em;
   text-align: left;
-  height: 12vh;
-}
-
-.flipTitile {
-  font-size: 6vw;
-  color: transparent;
-  display: flex;
-  padding-left: 5.5vw;
-  padding-right: 3vw;
-  padding-top: 0.5vh;
-  padding-bottom: 0.5vh;
-  border: 1vmin solid transparent;
-  width: 20vw;
-  letter-spacing: 0.05em;
-  text-align: right;
-  height: 12vh;
+  height: 9vh;
 }
 
 .background {
@@ -62,7 +49,7 @@
 .wrapLeft {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: flex-end;
   height: 50vh;
 }
@@ -70,6 +57,7 @@
 .wrapRight {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   height: 50vh;
 }
 
@@ -133,36 +121,4 @@
   animation-duration: 4s;
   animation-delay: 15s;
   animation-iteration-count: infinite;
-}
-
-#filter-campaign {
-  position: absolute;
-  width: 31vw;
-  height: 15vh;
-  right: 65vw;
-  bottom: 18vh;
-
-  background: #0066ff;
-  mix-blend-mode: multiply;
-}
-
-#filter-project {
-  position: absolute;
-  width: 31vw;
-  height: 15vh;
-  left: 65vw;
-  top: 18vh;
-
-  background-color: #ff00e5;
-  mix-blend-mode: multiply;
-}
-.filter-logo {
-  position: absolute;
-  left: 51%;
-  right: 0%;
-  top: 10%;
-  bottom: 40.94%;
-
-  background: #ffff00;
-  mix-blend-mode: multiply;
 }

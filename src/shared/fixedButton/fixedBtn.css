@@ -17,8 +17,8 @@
   bottom: 6vh;
   right: 1vw;
   z-index: 1000;
-  font-size: 3vw;
-  font-weight: 300;
+  font-size: 2vw;
+  font-weight: 800;
   color: black;
   transform: rotate(90deg);
   -webkit-font-smoothing: antialiased;
@@ -29,8 +29,8 @@
   bottom: 6vh;
   left: -1vw;
   z-index: 1010;
-  font-size: 3vw;
-  font-weight: 300;
+  font-size: 2vw;
+  font-weight: 800;
   color: black;
   transform: rotate(90deg);
   -webkit-font-smoothing: antialiased;
