@@ -6,17 +6,17 @@ import "./menu.css";
 
 const menuData = [
   {
-    title: "CAMPAIGN",
+    title: "DỰ ÁN",
     link: "/campaign",
     lineColor: "#FF0000",
   },
   {
-    title: "PROJECT",
+    title: "SẢN PHẨM",
     link: "/project",
     lineColor: "#00D1FF",
   },
   {
-    title: "CONTACT US",
+    title: "VỀ CHÚNG TÔI",
     link: "/contact",
     lineColor: "#FAFF00",
   },

@@ -26,7 +26,7 @@ function Contact(props) {
         <div id="aboutContainer">
           <div id="aboutText">
             <div id="bigTitleContainer">
-              <span className="bigTitle">ABOUT US</span>
+              <span className="bigTitle">VỀ CHÚNG TÔI</span>
               <div id="dashedDiv" />
             </div>
             <p id="content">
