@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { animated, useSpring } from "react-spring";
-import FixedButton from "../../shared/fixedButton/fixedBtn";
+import FixedButton from "shared/fixedButton/fixedBtn";
 import "./menu.css";
 
 const menuData = [
@@ -28,7 +28,7 @@ function MenuButton(props) {
     height: isHover ? "16vh" : "4vh",
   });
   const titleAnimate = useSpring({
-    fontSize: isHover ? "10vmax" : "6vmax",
+    fontSize: isHover ? "5vmax" : "3vmax",
     lineHeight: isHover ? "16vh" : "8vh",
   });
   return (

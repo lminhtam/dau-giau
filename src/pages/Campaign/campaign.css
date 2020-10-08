@@ -20,15 +20,12 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
 }
 
 #imgStyle {
   align-self: center;
-  width: 80vw;
-  height: 80vh;
-  mix-blend-mode: luminosity;
+  width: 100vw;
+  height: 100vh;
 }
 
 #title {

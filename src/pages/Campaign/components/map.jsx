@@ -8,19 +8,19 @@ export default function Map(props) {
     opacity: props.index > 0 ? 1 : 0,
   });
   const school = useSpring({
-    opacity: props.index > 1 ? 1 : 0,
+    opacity: props.index > 10 ? 1 : 0,
   });
   const bus = useSpring({
-    opacity: props.index > 2 ? 1 : 0,
+    opacity: props.index > 20 ? 1 : 0,
   });
   const camp = useSpring({
-    opacity: props.index > 3 ? 1 : 0,
+    opacity: props.index > 30 ? 1 : 0,
   });
   return (
     <div id="mapBg">
       <img
         style={{ width: "100%", height: "100%" }}
-        src={require("../../../assets/images/map_bg.svg")}
+        src={require("../../../assets/images/Campaign-03.png")}
         alt="map"
       />
       <animated.span id="house" style={house}>

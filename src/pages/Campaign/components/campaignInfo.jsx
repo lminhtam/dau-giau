@@ -7,7 +7,7 @@ export default class CampaignInfo extends React.Component {
     return (
       <div id="mapBg">
         <img
-          style={{ width: '100vw', height: '100vh'}}
+          style={{ width: "100vw", height: "100vh" }}
           src={require("../../../assets/images/map_start_bg.svg")}
           alt="map"
         />
@@ -15,22 +15,10 @@ export default class CampaignInfo extends React.Component {
           style={{
             position: "absolute",
             top: "100vh",
-            right: "10vw",
-            zIndex: 100,
-            width: "40vw",
+            right: "0vw",
+            width: "100vw",
           }}
-          src={require("../../../assets/images/campaign_1.png")}
-          alt="campaign"
-        />
-        <img
-          style={{
-            position: "absolute",
-            top: "120vh",
-            right: "15vw",
-            zIndex: 101,
-            height: "80vh",
-          }}
-          src={require("../../../assets/images/campaign_2.png")}
+          src={require("../../../assets/images/Campaign-02.png")}
           alt="campaign"
         />
         <span id="leftInfo">
