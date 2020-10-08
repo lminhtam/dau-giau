@@ -99,7 +99,7 @@ export default function ArticleButton(props) {
               style={buttonClick ? {} : title[`animate${index}`]}
               className={`title${index}`}
             >
-              COMING SOON
+              Sắp có
             </animated.span>
           )}
         </div>

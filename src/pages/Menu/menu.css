@@ -35,10 +35,9 @@
 }
 
 #menuTitle {
-  font-style: normal;
   font-weight: normal;
-  font-size: 6vmax;
-  line-height: 8vh;
+  font-size: 2vw;
+  line-height: 4vh;
   text-align: center;
   letter-spacing: 0.05em;
   color: #ffffff;
@@ -49,7 +48,7 @@
   width: 50%;
   position: absolute;
   mix-blend-mode: multiply;
-  background-color: #FF0000;
+  background-color: #ff0000;
 }
 
 #filter1 {
@@ -57,7 +56,7 @@
   width: 50%;
   position: absolute;
   mix-blend-mode: multiply;
-  background-color: #00D1FF;
+  background-color: #00d1ff;
 }
 
 #filter2 {
@@ -65,7 +64,7 @@
   width: 50%;
   position: absolute;
   mix-blend-mode: multiply;
-  background-color: #FAFF00;
+  background-color: #faff00;
 }
 
 #menuTitleContainer {

@@ -1,4 +1,7 @@
 import { useEffect, useRef } from "react";
+import { createHashHistory } from "history";
+
+export const history = createHashHistory({ forceRefresh: true });
 
 export function useInterval(callback, delay) {
   const savedCallback = useRef();

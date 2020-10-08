@@ -2,7 +2,7 @@
   position: fixed;
   top: 2vh;
   left: 2vw;
-  z-index: 100;
+  z-index: 1000;
 }
 
 #rightTop {
@@ -14,26 +14,18 @@
 
 .rightBot {
   position: fixed;
-  bottom: 6vh;
+  bottom: 3vh;
   right: 1vw;
-  z-index: 100;
-  font-size: 3vw;
-  font-weight: 300;
-  color: black;
-  transform: rotate(90deg);
-  -webkit-font-smoothing: antialiased;
+  z-index: 1000;
+  width: 5vw;
 }
 
 .leftBot {
   position: fixed;
-  bottom: 6vh;
-  left: -1vw;
-  z-index: 101;
-  font-size: 3vw;
-  font-weight: 300;
-  color: black;
-  transform: rotate(90deg);
-  -webkit-font-smoothing: antialiased;
+  bottom: 3vh;
+  left: 2vw;
+  z-index: 1010;
+  width: 5vw;
 }
 
 #close {
@@ -41,11 +33,13 @@
   width: 2.866vmax;
   right: 2vw;
   top: 2vh;
+  z-index: 3000;
 }
 
 #play {
   padding-top: 1vh;
   width: 4vmax;
+  z-index: 3000;
 }
 #rectangle {
   width: 4vmax;
@@ -68,8 +62,9 @@
   background-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
+  border-bottom-color: yellow;
   mix-blend-mode: multiply;
-  z-index: 200;
+  z-index: 2000;
 }
 
 #triangleLeft {
@@ -84,6 +79,7 @@
   background-color: transparent;
   border-left-color: transparent;
   border-right-color: transparent;
+  border-bottom-color: #ff0000;
   mix-blend-mode: multiply;
-  z-index: 201;
+  z-index: 2010;
 }

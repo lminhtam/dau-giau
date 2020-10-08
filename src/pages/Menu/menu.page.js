@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { animated, useSpring } from "react-spring";
-import FixedButton from "../../shared/fixedButton/fixedBtn";
+import FixedButton from "shared/fixedButton/fixedBtn";
 import "./menu.css";
 
 const menuData = [
   {
-    title: "CAMPAIGN",
+    title: "DỰ ÁN",
     link: "/campaign",
     lineColor: "#FF0000",
   },
   {
-    title: "PROJECT",
+    title: "SẢN PHẨM",
     link: "/project",
     lineColor: "#00D1FF",
   },
   {
-    title: "CONTACT US",
+    title: "VỀ CHÚNG TÔI",
     link: "/contact",
     lineColor: "#FAFF00",
   },
@@ -28,7 +28,7 @@ function MenuButton(props) {
     height: isHover ? "16vh" : "4vh",
   });
   const titleAnimate = useSpring({
-    fontSize: isHover ? "10vmax" : "6vmax",
+    fontSize: isHover ? "5vmax" : "3vmax",
     lineHeight: isHover ? "16vh" : "8vh",
   });
   return (
@@ -64,13 +64,8 @@ function Menu(props) {
       <div className="pineContainer">
         <img
           className="pines"
-          src={require("../../assets/icon/element-pines.png")}
+          src={require("../../assets/icon/pine.svg")}
           alt="pine"
-        />
-        <img
-          className="pine-circle"
-          src={require("../../assets/icon/element-pines-circle.png")}
-          alt="pine-circle"
         />
       </div>
       <div id="menuContainer">
@@ -86,13 +81,8 @@ function Menu(props) {
       <div className="pineContainer">
         <img
           className="pines"
-          src={require("../../assets/icon/element-pines.png")}
+          src={require("../../assets/icon/pine.svg")}
           alt="pine"
-        />
-        <img
-          className="pine-circle-right"
-          src={require("../../assets/icon/element-pines-circle.png")}
-          alt="pine-circle"
         />
       </div>
     </div>

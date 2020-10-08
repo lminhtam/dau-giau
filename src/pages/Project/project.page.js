@@ -1,35 +1,35 @@
 import React, { useState } from "react";
-import FixedButton from "../../shared/fixedButton/fixedBtn";
+import FixedButton from "shared/fixedButton/fixedBtn";
 import ArticleButton from "./component/articleButton";
 import "./project.css";
 
 const data = [
   {
-    title: "short-film.png",
+    title: "short-film.svg",
     img: "film.png",
     link: "/short-film",
     items: [],
     filterColor: "#00FF19",
   },
   {
-    title: "manip-title.png",
+    title: "manip-title.svg",
     img: "manipulation.png",
     link: "/manipulation",
     items: [],
     filterColor: "#0085FF",
   },
   {
-    title: "photoshot-title.png",
+    title: "photoshot-title.svg",
     img: "photoshot.png",
     link: "/photoshot",
     items: [],
     filterColor: "#FF00D6",
   },
   {
-    title: "clips-title.png",
+    title: "clips-title.svg",
     img: "clips.png",
     link: "/clips",
-    items: [{ title: "POST MOST" }, { title: "ACCIDENTS BY TRASH" }],
+    items: [{ title: "Post most" }, { title: "Accident by trash" }],
     filterColor: "#FF0000",
   },
 ];
@@ -50,13 +50,8 @@ function Project(props) {
         <div className="pineContainer">
           <img
             className="pines"
-            src={require("../../assets/icon/element-pines.png")}
+            src={require("../../assets/icon/pine.svg")}
             alt="pine"
-          />
-          <img
-            className="pine-circle"
-            src={require("../../assets/icon/element-pines-circle.png")}
-            alt="pine-circle"
           />
         </div>
         <div className="titleContainer">
@@ -96,13 +91,8 @@ function Project(props) {
         <div className="pineContainer">
           <img
             className="pines"
-            src={require("../../assets/icon/element-pines.png")}
+            src={require("../../assets/icon/pine.svg")}
             alt="pine"
-          />
-          <img
-            className="pine-circle-right"
-            src={require("../../assets/icon/element-pines-circle.png")}
-            alt="pine-circle"
           />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import FixedButton from "../../shared/fixedButton/fixedBtn";
+import FixedButton from "shared/fixedButton/fixedBtn";
 
 function Game(props) {
   return (

@@ -26,7 +26,7 @@ function Contact(props) {
         <div id="aboutContainer">
           <div id="aboutText">
             <div id="bigTitleContainer">
-              <span className="bigTitle">ABOUT US</span>
+              <span className="bigTitle">GIỚI THIỆU</span>
               <div id="dashedDiv" />
             </div>
             <p id="content">
@@ -58,7 +58,7 @@ function Contact(props) {
         </div>
 
         <div id="bigTitleContainer">
-          <span className="bigTitle">CONTACT US</span>
+          <span className="bigTitle">LIÊN HỆ</span>
           <div id="dashedDiv" />
         </div>
         <div id="contactContainer">
@@ -68,7 +68,7 @@ function Contact(props) {
             <span id="contactTitle">+1 248 817-8561</span>
           </div>
           <div id="followContainer">
-            <p id="contactTitle">FOLLOW US</p>
+            <p id="contactTitle">THEO DÕI CHÚNG TÔI TẠI</p>
             <div id="iconContainer">
               {socialContact.map((item) => (
                 <a
